@@ -1,5 +1,5 @@
-const { Question } = require('../models');
-const { User } = require('../models');
+const { Question, User } = require('../models');
+
 
 const resolvers = {
     Query: {
@@ -34,3 +34,5 @@ const resolvers = {
         },
     },
 };
+
+module.exports = resolvers;
