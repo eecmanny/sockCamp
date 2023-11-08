@@ -1,0 +1,21 @@
+{
+    "name": "sockcamp-server",
+    "version": "1.0.0",
+    "description": "sockcamp-server",
+    "main": "server.js",
+
+    "scripts": {
+        "start": "node server.js",
+        "seed": "node seed/seed.js"
+    },
+
+    "dependencies": {
+        "express": "^4.16.4",
+        "mongoose": "^5.4.19",
+        "graphql": "^14.0.2",
+        "@apollo/server": "^2.4.0"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.10"
+    }
+}
