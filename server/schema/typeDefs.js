@@ -1,4 +1,5 @@
-const typeDefs = gql`
+// const typeDefs = gql`
+const typeDefs = `
     type User {
         _id: ID
         username: String
@@ -15,7 +16,6 @@ const typeDefs = gql`
         createdAt: String
     }
 
-    // will need to change most likely
     type Answer {
         _id: ID
         answerText: String
