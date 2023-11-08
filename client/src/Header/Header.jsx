@@ -1,7 +1,7 @@
 import  { Link } from 'react-router-dom';
 import "./header.css"
 
-function header() {
+function Header() {
     return (
         <header className="header">
             <h1>SOCKCAMP</h1>
@@ -39,4 +39,4 @@ function header() {
     );
 }
 
-export default header;
+export default Header;
