@@ -22,4 +22,15 @@ const resolvers = {
     },
 
     Mutation: {
-        
+        addUser: async (parent, { username, email, password }) => {
+            const user = await User.create({ username, email, password });
+            return user;
+        },
+
+        // may end up not used
+        addQuestion: async (parent, { questionText, questionTheme, answers }) => {
+            const question = await Question.create({ questionText, questionTheme, answers });
+            return question;
+        },
+    },
+};
