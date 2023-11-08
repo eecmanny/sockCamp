@@ -33,6 +33,8 @@ const resolvers = {
             return question;
         },
     },
+
 };
 
 module.exports = resolvers;
+
