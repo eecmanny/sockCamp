@@ -1,41 +1,44 @@
 import React from 'react'
+import './Html.css'
 
 const Html = () => {
   return (
-    <div>
-      <div>
+    <div className="html">
+      <div className="html-container1">
         <h2>HTML</h2>
         <p>HTML is ....</p>
       </div>
-      <div>
-        <p>
-          Question 1: What does HTML stand for?
-        </p>
-      </div>
-      <div>
-        <p>
-          Answer: Hyper Text Markup Language
-        </p>
-      </div>
-      <div>
-        <p>
-          Question 2: What does HTML stand for?
-        </p>
-      </div>
-      <div>
-        <p>
-          Answer: Hyper Text Markup Language
-        </p>
-      </div>
-      <div>
-        <p>
-          Question 3: What does HTML stand for?
-        </p>
-      </div>
-      <div>
-        <p>
-          Answer: Hyper Text Markup Language
-        </p>
+      <div className="html-container2">
+        <div className="question">
+          <p>
+            {/* {`Question 1: ${}`} */}
+          </p>
+        </div>
+        <div className="answer">
+          <p>
+            Answer: Hyper Text Markup Language
+          </p>
+        </div>
+        <div className="question">
+          <p>
+          {/* {`Question 2: ${}`} */}
+          </p>
+        </div>
+        <div className="answer">
+          <p>
+            Answer: Hyper Text Markup Language
+          </p>
+        </div>
+        <div className="question">
+          <p>
+          {/* {`Question 3: ${}`} */}
+          </p>
+        </div>
+        <div className="answer">
+          <p>
+            Answer: Hyper Text Markup Language
+          </p>
+        </div>
       </div>
     </div>
   )
