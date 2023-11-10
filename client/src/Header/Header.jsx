@@ -2,12 +2,17 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import "./header.css"
 
 function Header() {
-    // const location = useLocation();
+    const location = useLocation();
     // const navigate = useNavigate();
     return (
-        // {location.pathname !== '/Home' && (
-
         <header className="header">
+
+            <h1>SOCKCAMP</h1>
+            <h2>Pre-Bootcamp</h2>
+
+            {location.pathname !== '/' && (
+                <nav>
+                    <ul>
 
             <div>
                 <h1>SOCKCAMP</h1>
@@ -43,8 +48,11 @@ function Header() {
                             </Link>
                         </li>
                     </ul>
+                </nav>)}
+
                 </nav>
             </div>
+
         </header>
     )
 }
