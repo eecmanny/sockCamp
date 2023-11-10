@@ -19,12 +19,6 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
-  // questions: [
-  //   {
-  //     type: Schema.Types.ObjectId,
-  //     ref: 'Question',
-  //   },
-  // ],
 });
 
 // Set up pre-save middleware to create password
@@ -43,3 +37,5 @@ userSchema.methods.isCorrectPassword = async function (password) {
 };
 
 const User = model('User', userSchema);
+
+module.exports = User;
