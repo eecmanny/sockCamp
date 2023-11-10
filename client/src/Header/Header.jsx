@@ -1,4 +1,4 @@
-import  { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import "./header.css"
 
 function Header() {
@@ -8,41 +8,46 @@ function Header() {
         // {location.pathname !== '/Home' && (
 
         <header className="header">
-        
-            <h1>SOCKCAMP</h1>
-            <h2>Pre-Bootcamp</h2>
 
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/html">
-                            HTML
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/css">
-                            CSS
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/javascript">
-                            JavaScript
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/react">
-                            React
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/combo">
-                            Combo
-                        </Link>
-                    </li>
-                </ul>
-            </nav>
+            <div>
+                <h1>SOCKCAMP</h1>
+                <h2>Pre-Bootcamp</h2>
+            </div>
+            <div>
+                <nav className="nav">
+                    <ul>
+                        
+                        <li>
+                            <Link to="/html">
+                                HTML
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/css">
+                                CSS
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/javascript">
+                                JavaScript
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/react">
+                                React
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/combo">
+                                Combo
+                            </Link>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        )}
+    )
+}
 //     );
 // }
 
