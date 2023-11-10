@@ -1,43 +1,46 @@
 import React from 'react'
+import './Combo.css'
 
 const Combo = () => {
   return (
-    <div>
-    <div>
-      <h2>The Ultimate Test</h2>
-      <p>How much do you know of everything ....</p>
+    <div className="combo">
+      <div className="combo-container1">
+        <h2>Combo</h2>
+        <p>The Ultimate Test</p>
+      </div>
+      <div className="combo-container2">
+        <div className="question">
+          <p>
+            {/* {`Question 1: ${}`} */}
+          </p>
+        </div>
+        <div className="answer">
+          <p>
+            Answer: Hyper Text Markup Language
+          </p>
+        </div>
+        <div className="question">
+          <p>
+          {/* {`Question 2: ${}`} */}
+          </p>
+        </div>
+        <div className="answer">
+          <p>
+            Answer: Hyper Text Markup Language
+          </p>
+        </div>
+        <div className="question">
+          <p>
+          {/* {`Question 3: ${}`} */}
+          </p>
+        </div>
+        <div className="answer">
+          <p>
+            Answer: Hyper Text Markup Language
+          </p>
+        </div>
+      </div>
     </div>
-    <div>
-      <p>
-        Question 1: What does HTML stand for?
-      </p>
-    </div>
-    <div>
-      <p>
-        Answer: Hyper Text Markup Language
-      </p>
-    </div>
-    <div>
-      <p>
-        Question 2: What does HTML stand for?
-      </p>
-    </div>
-    <div>
-      <p>
-        Answer: Hyper Text Markup Language
-      </p>
-    </div>
-    <div>
-      <p>
-        Question 3: What does HTML stand for?
-      </p>
-    </div>
-    <div>
-      <p>
-        Answer: Hyper Text Markup Language
-      </p>
-    </div>
-  </div>
   )
 }
 
