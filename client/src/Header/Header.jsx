@@ -1,10 +1,16 @@
-import  { Link } from 'react-router-dom';
+import  { Link, useLocation, useNavigate } from 'react-router-dom';
 import "./header.css"
 
 function Header() {
+    // const location = useLocation();
+    // const navigate = useNavigate();
     return (
+        // {location.pathname !== '/Home' && (
+
         <header className="header">
+        
             <h1>SOCKCAMP</h1>
+            <h2>Pre-Bootcamp</h2>
 
             <nav>
                 <ul>
@@ -36,7 +42,16 @@ function Header() {
                 </ul>
             </nav>
         </header>
-    );
-}
+        )}
+//     );
+// }
 
 export default Header;
+
+// {location.pathname !== '/' && (
+//     <button
+//       className="btn btn-dark mb-3"
+//       onClick={() => navigate(-1)}
+//     >
+//       &larr; Go Back
+//     </button>
