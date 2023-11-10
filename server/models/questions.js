@@ -8,7 +8,7 @@ const questionSchema = new Schema({
     },
     question: {
         type: String,
-        required: 'You need to provide a question!',
+        required: true,
         minLength: 1,
         maxLength: 280,
         trim: true,
