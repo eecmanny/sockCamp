@@ -1,0 +1,34 @@
+[
+    {
+        "category": "HTML",
+        "question": "Does this HTML Question work?",
+        "incorrectAnswer1": "NO",
+        "incorrectAnswer2": "false",
+        "incorrectAnswer3": "not right",
+        "correctAnswer": "Yes"
+    },
+    {
+        "category": "Css",
+        "question": "Does this CSS Question work?",
+        "incorrectAnswer1": "NO",
+        "incorrectAnswer2": "false",
+        "incorrectAnswer3": "not right",
+        "correctAnswer": "Yes"
+    },
+    {
+        "category": "JavaScript",
+        "question": "Does this JavaScript Question work?",
+        "incorrectAnswer1": "NO",
+        "incorrectAnswer2": "false",
+        "incorrectAnswer3": "not right",
+        "correctAnswer": "Yes"
+    },
+    {
+        "category": "React",
+        "question": "Does this React Question work?",
+        "incorrectAnswer1": "NO",
+        "incorrectAnswer2": "false",
+        "incorrectAnswer3": "not right",
+        "correctAnswer": "Does this React Question work?"
+    }
+]

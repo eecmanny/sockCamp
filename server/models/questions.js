@@ -1,5 +1,4 @@
 const { Schema, model } = require('mongoose');
-const dateFormat = require('../utils/dateFormat');
 
 const questionSchema = new Schema({
     category: {
@@ -14,10 +13,28 @@ const questionSchema = new Schema({
         maxLength: 280,
         trim: true,
     },
-    answers: [
+    correctAnswers: [
         {
         type: Schema.Types.ObjectId,
-        ref: 'Answer',
+        ref: 'CorrectAnswer',
+        },
+    ],
+    incorrectAnswers1: [
+        {
+        type: Schema.Types.ObjectId,
+        ref: 'IncorrectAnswer',
+        },
+    ],
+    incorrectAnswers2: [
+        {
+        type: Schema.Types.ObjectId,
+        ref: 'IncorrectAnswer',
+        },
+    ],
+    incorrectAnswers3: [
+        {
+        type: Schema.Types.ObjectId,
+        ref: 'IncorrectAnswer',
         },
     ],
     });
