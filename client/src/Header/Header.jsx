@@ -13,6 +13,15 @@ function Header() {
             {location.pathname !== '/' && (
                 <nav>
                     <ul>
+
+            <div>
+                <h1>SOCKCAMP</h1>
+                <h2>Pre-Bootcamp</h2>
+            </div>
+            <div>
+                <nav className="nav">
+                    <ul>
+                        
                         <li>
                             <Link to="/html">
                                 HTML
@@ -40,6 +49,10 @@ function Header() {
                         </li>
                     </ul>
                 </nav>)}
+
+                </nav>
+            </div>
+
         </header>
     )
 }
