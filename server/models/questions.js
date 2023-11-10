@@ -13,28 +13,10 @@ const questionSchema = new Schema({
         maxLength: 280,
         trim: true,
     },
-    correctAnswers: [
+    answers: [
         {
         type: Schema.Types.ObjectId,
-        ref: 'CorrectAnswer',
-        },
-    ],
-    incorrectAnswers1: [
-        {
-        type: Schema.Types.ObjectId,
-        ref: 'IncorrectAnswer',
-        },
-    ],
-    incorrectAnswers2: [
-        {
-        type: Schema.Types.ObjectId,
-        ref: 'IncorrectAnswer',
-        },
-    ],
-    incorrectAnswers3: [
-        {
-        type: Schema.Types.ObjectId,
-        ref: 'IncorrectAnswer',
+        ref: 'Answer',
         },
     ],
     });
