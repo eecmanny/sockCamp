@@ -1,30 +1,18 @@
-import { Link } from 'react-router-dom';
-import "./home.css"
+import React from 'react'
+import './home.css'
 
-function Home() {
-    return (
-        <div className="Home">
-            {/* <h1>SOCKCAMP</h1>
-            <h2>Pre-BootCamp</h2> */}
-            <p>
-                Because you must put your sock on, before you put your boot on.
-            </p>
-            <div>
-                <button>
-                    <Link to="/">
-                        Login
-                    </Link>
-                </button>
-            </div>
-            <div>
-                <button>
-                    <Link to="/">
-                        Signup
-                    </Link>
-                </button>
-            </div>
-        </div>
-    );
-}
+const Home = () => {
 
-export default Home;
+      return (
+          <div className="js">
+            <div className="js-container1">
+              <h2>Welcome.</h2>
+              <p>This project is designed to give an inside view of what coding is all about.
+                  Start at the beginning with HTML and learn it all or you may choose any other topic that interests you. Click any button above to begin. Happy coding. </p>
+            </div>
+          </div>
+        )
+    }
+  
+
+export default Home

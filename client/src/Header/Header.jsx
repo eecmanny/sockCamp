@@ -1,13 +1,17 @@
 import { Link, useLocation } from 'react-router-dom';
 import "./header.css"
+import { useTypeFx } from "../hooks/typerFx";
+
 
 function Header() {
     const location = useLocation();
+    const textHeader = useTypeFx("{SOCK CAMP}", 250);
+
     return (
         <header className="header">
             <main className='headerBar'>
                 <section className='headerLogo'>
-                    <h1>SOCKCAMP</h1>
+                    <h1>{textHeader}<br/></h1>
                     <h2>Pre-Bootcamp</h2>
                 </section>
                 <section className='logout'>
@@ -25,6 +29,11 @@ function Header() {
             {location.pathname !== '/' && (
                 <nav className='navbar'>
                     <ul className='navButtons'>
+                    <li className="navSingleButton">
+                            <Link to="/home">
+                                Home
+                            </Link>
+                        </li>
                         <li className="navSingleButton">
                             <Link to="/html">
                                 HTML
