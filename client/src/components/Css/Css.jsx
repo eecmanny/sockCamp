@@ -11,7 +11,9 @@ const Css = () => {
              to create the styles used in the web site and to make it look good. 
             CSS is responsible for font color, font size, background color, and the layout of the web page.
             CSS uses rules to style the web page.  A CSS rule-set consists of a selector and a declaration block. The selector points to the HTML element you want to style.
-            An example of this would look like;  body ( background-color: lightgreen;)  or p {color: green; font-size: 20px;}. This way all the "p" tags in your web site will have a green 
+            {/* An example of this would look like;  body ( background-color: lightgreen;)  or p '{color: green; font-size: 20px;}. */}
+            
+             This way all the "p" tags in your web site will have a green 
             font color and a font size of 20px. One of the big advantages of this is: if you want to change something throughout your site, you only have to change it in one place.
             
             

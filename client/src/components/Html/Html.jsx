@@ -6,7 +6,7 @@ const Html = () => {
     <div className="html">
       <div className="html-container1">
         <h2>HTML</h2>
-        <p>HTML is short for Hyper Text Markup Language. HTML is the standard language for creating web pages, it is a markup language and not a coding language.. 
+        {/* <p>HTML is short for Hyper Text Markup Language. HTML is the standard language for creating web pages, it is a markup language and not a coding language.. 
           It consists of a series of elements, and these elements are used to structure the web page.
           HTML elements are represented by tags. HTML tags label pieces of content such as "heading", "paragraph", "table", and so on.
           A tag is written with an opening <  > and most tags also have a closing tag </  >. Paragraphs are defined with an opening  <p> tag, and a closing </p> tag.
@@ -17,7 +17,7 @@ const Html = () => {
           sees when they open a web page. 
         
 
-        </p>
+        </p> */}
       </div>
       <div className="html-container2">
         <div className="question">
