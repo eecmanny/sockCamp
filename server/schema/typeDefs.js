@@ -6,7 +6,19 @@ const typeDefs = `
         email: String
         password: String
         createdAt: String
+        scores: [Score]
     }
+
+    type Score {
+        _id: ID
+        score: Int
+        date: String
+    }
+
+    type Auth {
+        token: ID!
+        user: User
+      }
 
     type Question {
         _id: ID
@@ -31,8 +43,10 @@ const typeDefs = `
     }
 
     type Mutation {
-        addUser(username: String!, email: String!, password: String!): User
+        addUser(username: String!, email: String!, password: String!): Auth
+        login(email: String!, password: String!): Auth
         addQuestion(questionText: String!, questionTheme: String!): Question
+        addScore(score: Int!, date: String!): User
     }
 `;
 
