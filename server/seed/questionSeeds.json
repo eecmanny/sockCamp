@@ -1,34 +1,142 @@
 [
     {
-        "category": "HTML",
-        "question": "Does this HTML Question work?",
-        "incorrectAnswer1": "NO",
-        "incorrectAnswer2": "false",
-        "incorrectAnswer3": "not right",
-        "correctAnswer": "Yes"
+        "category": "Combo",
+        "question": "HTML contains?",
+        "correctAnswer": "<p> tags",
+        "incorrectAnswer2": "<s> tags",
+        "incorrectAnswer3": "<d> tags",
+        "incorrectAnswer4": "<t> tags"
+    
     },
     {
-        "category": "Css",
-        "question": "Does this CSS Question work?",
-        "incorrectAnswer1": "NO",
-        "incorrectAnswer2": "false",
-        "incorrectAnswer3": "not right",
-        "correctAnswer": "Yes"
+        "category": "Combo",
+        "question": "HTML contains?",
+        "correctAnswer": "<p> tags",
+        "incorrectAnswer2": "<s> tags",
+        "incorrectAnswer3": "<d> tags",
+        "incorrectAnswer4": "<t> tags"
+    
+    },
+    {
+        "category": "Combo",
+        "question": "In HTML all?",
+        "incorrectAnswer1":" tags must always have an opening and closing tag",
+        "correctAnswer":"elememts are represented by tags",
+        "incorrectAnswer3": "blocks must always have an opening and closing tag",
+        "incorrectAnswer4":"elemets are written in UPPERCASE"
+    
+    },
+
+    
+    {
+        "category": "HTML",
+        "question": "HTML?",
+        "incorrectAnswer1":"is a programming language",
+        "incorrectAnswer2": "can be used insead of JavaScript",
+        "correctAnswer":"consists of elements used to structure a web pages",
+        "incorrectAnswer4":"uses rules to style a web page"
+    
+    },
+    {
+        "category": "HTML",
+        "question": "HTML elements?",
+        "incorrectAnswer1":"change the size of the font",
+        "incorrectAnswer2": "are used to contain functions",
+        "correctAnswer":"are represented by tags",
+        "incorrectAnswer4":"are always written in UPPERCASE"
+    
+    },
+    {
+        "category": "HTML",
+        "question": "HTML always have?",
+        "incorrectAnswer1":"5 sections",
+        "correctAnswer":"a head and a body",
+        "incorrectAnswer3": "4 sections",
+        "incorrectAnswer4":"an <end> tag"
+    
+    },
+
+
+    {
+        "category": "CSS",
+        "question": "Cascading Style Sheets?",
+        "correctAnswer": "are used to remove styling format from html",
+        "incorrectAnswer2": "are used to write programming code",
+        "incorrectAnswer3": "contain a head and a body",
+        "incorrectAnswer4": "start with !DOCTYPE"
+    },
+    {
+        "category": "CSS",
+        "question": "CSS is?",
+        "incorrectAnswer1": "is another form of HTML",
+        "incorrectAnswer2": "is the same as HTML",
+        "incorrectAnswer4": "is part of the HTML page",
+        "correctAnswer": "works with HTML to provide styling"
+        
+    },
+    {
+        "category": "CSS",
+        "question": "An example of CSS is?",
+        "incorrectAnswer1": "<p></p>",
+        "incorrectAnswer2": "<img src=''>",
+        "correctAnswer": "background-color: red;",
+        "incorrectAnswer4": "if/else statement"
+      
+    },
+
+
+    {
+        "category": "JavaScript",
+        "question": "JavaScript?",
+        "incorrectAnswer1": "is used to style a web page",
+        "incorrectAnswer2": "is the same as Java",
+        "incorrectAnswer3": "is also known as MERN",
+        "correctAnswer": "allows a user to make web pages more interactive"
     },
     {
         "category": "JavaScript",
-        "question": "Does this JavaScript Question work?",
-        "incorrectAnswer1": "NO",
-        "incorrectAnswer2": "false",
-        "incorrectAnswer3": "not right",
-        "correctAnswer": "Yes"
+        "question": "JavaScript?",
+        "correctAnswer": "includes switch statements, loops and functions",
+        "incorrectAnswer2": "is used to change the style of a web page",
+        "incorrectAnswer3": "can only be used with REACT",
+        "incorrectAnswer4": "is a markup language"
+       
+    },
+    {
+        "category": "JavaScript",
+        "question": "A method is?",
+        "correctAnswer": "an action that can be performed on an object",
+        "incorrectAnswer1": "not part of JavaScript",
+        "incorrectAnswer2": "is part of REACT",
+        "incorrectAnswer3": "is part of a switch statement"
+       
+    },
+
+
+    {
+        "category": "React",
+        "question": "React is?",
+        "incorrectAnswer1": "only a front end framework",
+        "incorrectAnswer2": "only a back end framework",
+        "correctAnswer": "both front end and back end framework?",
+        "incorrectAnswer4": "neither front end of back end framework"
+       
     },
     {
         "category": "React",
-        "question": "Does this React Question work?",
-        "incorrectAnswer1": "NO",
-        "incorrectAnswer2": "false",
-        "incorrectAnswer3": "not right",
-        "correctAnswer": "Does this React Question work?"
+        "question": "React?",
+        "incorrectAnswer1": "uses methods as an action",
+        "correctAnswer": "makes reusable bits of code",
+        "incorrectAnswer3": "includes loops and functions",
+        "incorrectAnswer4": "only works in the cloud"
+      
+    },
+    {
+        "category": "React",
+        "question": "React?",
+        "incorrectAnswer1": "includes switch statements, loops and functions",
+        "incorrectAnswer2": "is used to point to the HTML element you want to style",
+        "incorrectAnswer3": "Must always be part of the body",
+        "correctAnswer": "is a JavaScript library or building user interfaces"
     }
 ]
