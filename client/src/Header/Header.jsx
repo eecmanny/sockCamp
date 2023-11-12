@@ -18,13 +18,15 @@ function Header() {
                 {location.pathname !== '/' && (
 
                     <section className='logout'>
-                        <button>
-                            <Link to="/">
-                            </Link>
-                            <h3>
-                                Logout
-                            </h3>
-                        </button>
+                        <Link to="/">
+                            <button>
+
+
+                                <h3>
+                                    Logout
+                                </h3>
+                            </button>
+                        </Link>
                     </section>
                 )}
             </main>
@@ -33,36 +35,36 @@ function Header() {
             {location.pathname !== '/' && (
                 <nav className='navbar'>
                     <ul className='navButtons'>
-                            <Link to="/home">
-                        <li className="navSingleButton" >
+                        <Link to="/home">
+                            <li className="navSingleButton" >
                                 <h3>Home</h3>
-                        </li>
-                            </Link>
-                            <Link to="/html">
-                        <li className="navSingleButton">
+                            </li>
+                        </Link>
+                        <Link to="/html">
+                            <li className="navSingleButton">
                                 <h3>HTML</h3>
-                        </li>
-                            </Link>
-                            <Link to="/css">
-                        <li className="navSingleButton">
-                               <h3>CSS</h3>
-                        </li>
-                            </Link>
-                            <Link to="/javascript">
-                        <li className="navSingleButton">
+                            </li>
+                        </Link>
+                        <Link to="/css">
+                            <li className="navSingleButton">
+                                <h3>CSS</h3>
+                            </li>
+                        </Link>
+                        <Link to="/javascript">
+                            <li className="navSingleButton">
                                 <h3>JavaScript</h3>
-                        </li>
-                            </Link>
-                            <Link to="/react">
-                        <li className="navSingleButton">
+                            </li>
+                        </Link>
+                        <Link to="/react">
+                            <li className="navSingleButton">
                                 <h3>React</h3>
-                        </li>
-                            </Link>
-                            <Link to="/combo">
-                        <li className="navSingleButton">
+                            </li>
+                        </Link>
+                        <Link to="/combo">
+                            <li className="navSingleButton">
                                 <h3>Combo</h3>
-                        </li>
-                            </Link>
+                            </li>
+                        </Link>
                     </ul>
                 </nav>
             )}

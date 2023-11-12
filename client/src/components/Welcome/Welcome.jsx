@@ -21,14 +21,14 @@ function Welcome() {
             </p>
             <div className="buttons">
             <div>
-                    <Link to="/">
+                    <Link to="/login">
                 <button className="button1">
                         <h3>LOGIN</h3>
                 </button>
                     </Link>
             </div>
             <div>
-                    <Link to="/">
+                    <Link to="/signup">
                 <button className="button1">
                         <h3>SIGNUP</h3>
                 </button>
