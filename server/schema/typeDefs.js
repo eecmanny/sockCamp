@@ -47,6 +47,7 @@ const typeDefs = `
         login(email: String!, password: String!): Auth
         addQuestion(questionText: String!, questionTheme: String!): Question
         addScore(score: Int!, date: String!): User
+        updateScore(score: Int!, date: String!): User
     }
 `;
 
