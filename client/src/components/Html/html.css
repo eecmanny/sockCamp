@@ -28,3 +28,26 @@
     justify-content: center;
     align-items: center;
 }
+
+.htmlHeader {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+ 
+}
+
+.htmlBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.htmlText {
+    display: flex;
+    /* flex-direction: column; */
+    min-width: 50%;
+    max-width: 100%;
+    /* width: 200px; */
+    text-wrap: wrap;
+}

@@ -7,7 +7,7 @@ import App from './App'
 
 import { useState } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Combo from "./components/Combo/Combo";
+import Quiz from "./components/Quiz/Quiz";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import HTML from "./components/Html/Html";
@@ -55,8 +55,8 @@ const router = createBrowserRouter([
                 element: <React />,
             },
             {
-                path: "/combo",
-                element: <Combo />,
+                path: "/quiz",
+                element: <Quiz />,
             },
         ],
     }
