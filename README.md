@@ -56,6 +56,9 @@ Currently, two official plugins are available:
 ![React Badge](https://img.shields.io/badge/React-yellow)
 ![jsonwebtoken Badge](https://img.shields.io/badge/jsonwebtoken-white)
 
+This application uses the following dependencies:
+nodemon, mongoose, jsonwebtoken, graphQL, express, bcrypt, apollo/server and node
+
 
 ## Usage
 
@@ -63,10 +66,12 @@ To use this application one must login in or sign up.  This will give the user a
 
 ## Installation
 
+A user must so an npm i  and then an npm run dev to start the application.
+
 ## Future deployment: 
 
 What we would like to see in the future is an expanded version of this application.  More topics, more detail, more and diverse questions.
 
 ## Credit: 
 
-Our team is Jacob Bassett, Emmanuel Cordero, Brenny Souza, Ulises Vivar and Linda Vitrella
+Our team is Emmanuel Cordero, Jacob Bassett, Brenny Souza, Linda Vitrella and Ulises Vivar
