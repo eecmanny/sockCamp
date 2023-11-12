@@ -8,28 +8,32 @@ function Header() {
     const textHeader = useTypeFx("{SOCK CAMP}", 250);
 
     return (
+
         <header className="header">
             <main className='headerBar'>
                 <section className='headerLogo'>
-                    <h1>{textHeader}<br/></h1>
+                    <h1>{textHeader}<br /></h1>
                     <h2>Pre-Bootcamp</h2>
                 </section>
-                <section className='logout'>
-                    <button>
-                        <Link to="/">
-                        </Link>
-                        <h3>
-                            Logout
-                        </h3>
-                    </button>
-                </section>
+                {location.pathname !== '/' && (
+
+                    <section className='logout'>
+                        <button>
+                            <Link to="/">
+                            </Link>
+                            <h3>
+                                Logout
+                            </h3>
+                        </button>
+                    </section>
+                )}
             </main>
 
 
             {location.pathname !== '/' && (
                 <nav className='navbar'>
                     <ul className='navButtons'>
-                    <li className="navSingleButton">
+                        <li className="navSingleButton">
                             <Link to="/home">
                                 Home
                             </Link>
