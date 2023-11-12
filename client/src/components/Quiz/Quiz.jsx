@@ -1,7 +1,7 @@
 import React from 'react'
-import './Combo.css'
+import './quiz.css'
 
-const Combo = () => {
+const Quiz = () => {
   return (
     <div className="combo">
       <div className="combo-container1">
@@ -44,4 +44,4 @@ const Combo = () => {
   )
 }
 
-export default Combo
+export default Quiz

@@ -60,9 +60,9 @@ function Header() {
                                 <h3>React</h3>
                             </li>
                         </Link>
-                        <Link to="/combo">
+                        <Link to="/quiz">
                             <li className="navSingleButton">
-                                <h3>Combo</h3>
+                                <h3>Quiz</h3>
                             </li>
                         </Link>
                     </ul>
