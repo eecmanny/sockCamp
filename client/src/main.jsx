@@ -15,6 +15,7 @@ import CSS from "./components/Css/Css";
 import Javascript from "./components/Javascript/Javascript";
 import React from "./components/React/React";
 import Signup from "./components/Signup/Signup";
+import Welcome from "./components/Welcome/Welcome";
 
 const router = createBrowserRouter([
     {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
         children: [
           {
                 index: true,
-                element: <Home />,
+                element: <Welcome />,
           },
             {
                 path: "/login",
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
             {
                 path: "/signup",
                 element: <Signup />,
+            },
+            {
+                path: "/home",
+                element: <Home />,
             },
             {
                 path: "/html",
