@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import "./welcome.css"
 
+// Comment
 function Welcome() {
     return (
         <div className="Welcome">
