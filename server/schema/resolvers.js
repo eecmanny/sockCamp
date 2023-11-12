@@ -14,13 +14,19 @@ const resolvers = {
             return User.findOne({ username });
         },
 
-        questions: async () => {
-            return Question.find().sort({ createdAt: -1 });
-        },
+        // questions: async () => {
+        //     return Question.find().sort({ createdAt: -1 });
+        // },
 
         question: async (parent, { questionId }) => {
             return Question.findOne({ _id: questionId });
         },
+
+        // answers: async ({ questionId, category, answer}) => { 
+        //    const questionLoaded = await Question.findOne({ _id: questionId });
+        //     const answersLoaded = await Answer.
+        //     return Answer.find().sort({ createdAt: -1 });
+        // }
     },
 
     Mutation: {
@@ -47,13 +53,27 @@ const resolvers = {
       
             return { token, user };
           },
-        // may end up not used
-        addQuestion: async (parent, { questionText, questionTheme, answers }) => {
-            const question = await Question.create({ questionText, questionTheme, answers });
-            return question;
-        },
+        // // may end up not used
+        // addQuestion: async (parent, { questionText, questionTheme, answers }) => {
+        //     const question = await Question.create({ questionText, questionTheme, answers });
+        //     return question;
+        // },
+
 
         addScore: async (parent, { score, date }, context) => {
+            if (context.user) {
+                const addUserScore = await User.findByIdAndUpdate(
+                    { _id: context.user._id },
+                    { $push: { scores: score } },
+                    { new: true }
+                );
+                return addUserScore;
+            }
+            const userScore = await Score.create({ score, date });
+            return userScore;
+        },
+
+        updateScore: async (parent, { score, date }, context) => {
             if (context.user) {
                 const updatedUser = await User.findByIdAndUpdate(
                     { _id: context.user._id },
@@ -62,9 +82,9 @@ const resolvers = {
                 );
                 return updatedUser;
             }
-            const user = await Score.create({ score, date });
-            return user;
-        }
+            const userScore = await Score.updateOne({ score, date });
+            return userScore;
+        },
     },
 
 };
