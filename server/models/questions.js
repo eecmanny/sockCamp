@@ -6,6 +6,14 @@ const questionSchema = new Schema({
         required: true,
         trim: true,
     },
+    // questionId: {
+    //     type: Schema.Types.ObjectId,
+    //     ref: 'Question'
+    // },
+    questionId: {
+        type: Number,
+        required: true,
+    },
     question: {
         type: String,
         required: true,

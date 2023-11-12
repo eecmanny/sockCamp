@@ -11,7 +11,12 @@ const answerSchema = new Schema({
         minLength: 1,
         maxLength: 280,
         trim: true
-    }
+    },
+
+    questionId: {
+        type: Schema.Types.ObjectId,
+        ref: 'Question'
+    },
 });
 
 const Answer = model('Answers', answerSchema);
