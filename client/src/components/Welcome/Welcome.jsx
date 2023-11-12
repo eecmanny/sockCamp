@@ -5,24 +5,35 @@ import "./welcome.css"
 function Welcome() {
     return (
         <div className="Welcome">
+            {/* <img src="sockcampcoding.jpg"/> */}
             {/* <h1>SOCKCAMP</h1>
             <h2>Pre-BootCamp</h2> */}
+            <h2>
+                Welcome to Sock Camp.
+
+            </h2>
+                
             <p>
-                Because you must put your sock on, before you put your boot on.
+                 We are a pre-bootcamp for those who want to learn how to code.  We will teach you the basics of HTML, CSS, and JavaScript.  
             </p>
+            <p>
+                Please login or signup to get started.
+            </p>
+            <div className="buttons">
             <div>
-                <button>
                     <Link to="/">
-                        Login
-                    </Link>
+                <button className="button1">
+                        <h3>LOGIN</h3>
                 </button>
+                    </Link>
             </div>
             <div>
-                <button>
                     <Link to="/">
-                        Signup
-                    </Link>
+                <button className="button1">
+                        <h3>SIGNUP</h3>
                 </button>
+                    </Link>
+            </div>
             </div>
         </div>
     );
