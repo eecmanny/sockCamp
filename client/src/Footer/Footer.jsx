@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer className="footer">
             <div>
-                <h2>SOCKCAMP 2023 / All Rights Reserved.</h2>
+                <h2>Sock Camp 2023 / Final Bootcamp Project</h2>
             </div>
         </footer>
     );

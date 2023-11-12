@@ -5,15 +5,15 @@ import { useTypeFx } from "../hooks/typerFx";
 
 function Header() {
     const location = useLocation();
-    const textHeader = useTypeFx("{SOCK CAMP}", 250);
+    const textHeader = useTypeFx("{SOCK CAMP}", 220);
 
     return (
 
         <header className="header">
             <main className='headerBar'>
                 <section className='headerLogo'>
-                    <h1>{textHeader}<br /></h1>
-                    <h2>Pre-Bootcamp</h2>
+                    <h1>{textHeader}</h1>
+                    {/* <h2>PRE-BOOTCAMP</h2> */}
                 </section>
                 {location.pathname !== '/' && (
 
@@ -33,36 +33,36 @@ function Header() {
             {location.pathname !== '/' && (
                 <nav className='navbar'>
                     <ul className='navButtons'>
-                        <li className="navSingleButton">
                             <Link to="/home">
-                                Home
-                            </Link>
+                        <li className="navSingleButton" >
+                                <h3>Home</h3>
                         </li>
-                        <li className="navSingleButton">
+                            </Link>
                             <Link to="/html">
-                                HTML
-                            </Link>
-                        </li>
                         <li className="navSingleButton">
+                                <h3>HTML</h3>
+                        </li>
+                            </Link>
                             <Link to="/css">
-                                CSS
-                            </Link>
-                        </li>
                         <li className="navSingleButton">
+                               <h3>CSS</h3>
+                        </li>
+                            </Link>
                             <Link to="/javascript">
-                                JavaScript
-                            </Link>
-                        </li>
                         <li className="navSingleButton">
+                                <h3>JavaScript</h3>
+                        </li>
+                            </Link>
                             <Link to="/react">
-                                React
-                            </Link>
-                        </li>
                         <li className="navSingleButton">
-                            <Link to="/combo">
-                                Combo
-                            </Link>
+                                <h3>React</h3>
                         </li>
+                            </Link>
+                            <Link to="/combo">
+                        <li className="navSingleButton">
+                                <h3>Combo</h3>
+                        </li>
+                            </Link>
                     </ul>
                 </nav>
             )}
