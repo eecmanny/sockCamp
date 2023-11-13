@@ -1,4 +1,4 @@
-const { Question, User, Answer, Score} = require('../models');
+const { Question, User, Answer, Score } = require('../models');
 // const { populate } = require('../models/Answers');
 const { signToken, AuthenticationError } = require('../utils/auth');
 
@@ -21,38 +21,32 @@ const resolvers = {
         question: async (parent, { questionId }) => {
             return Question.findOne({ _id: questionId });
         },
-
-        // answers: async ({ questionId, category, answer}) => { 
-        //    const questionLoaded = await Question.findOne({ _id: questionId });
-        //     const answersLoaded = await Answer.
-        //     return Answer.find().sort({ createdAt: -1 });
-        // }
     },
 
     Mutation: {
         addUser: async (parent, { username, email, password }) => {
             const user = await User.create({ username, email, password });
             const token = signToken(user);
-      
+
             return { token, user };
         },
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
-      console.log(user);
+            console.log(user);
             if (!user) {
-              throw AuthenticationError;
+                throw AuthenticationError;
             }
-      console.log(password);
+            console.log(password);
             const correctPw = await user.isCorrectPassword(password);
-      console.log(correctPw);
+            console.log(correctPw);
             if (!correctPw) {
-              throw AuthenticationError;
+                throw AuthenticationError;
             }
-      
+
             const token = signToken(user);
-      
+
             return { token, user };
-          },
+        },
         // // may end up not used
         // addQuestion: async (parent, { questionText, questionTheme, answers }) => {
         //     const question = await Question.create({ questionText, questionTheme, answers });
