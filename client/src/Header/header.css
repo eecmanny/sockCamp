@@ -18,6 +18,8 @@
     background-color: cadetblue;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);;
     color: white;
+    width: 100%;
+    box-shadow: 0 0 7px black;
 }
 
 
@@ -48,10 +50,11 @@ justify-content: space-around;
     list-style: none;
     padding: 0 20px;
     height: 60px;
-    background-color: black;
+    background-color: cadetblue;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     align-items: center;
     border-radius: 15%;
+    box-shadow: 0 0 7px green
 }
 
 .headerLogo {
