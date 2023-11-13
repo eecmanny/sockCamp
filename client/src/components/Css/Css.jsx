@@ -1,60 +1,92 @@
 import React from 'react'
 import './Css.css'
+import { Collapse } from 'antd';
+const { Panel } = Collapse;
 
-const Css = () => {
+const CSS = () => {
   return (
-      <div className="css">
-        <div className="css-container1">
-          <h2>CSS</h2>
-          <p>CSS is short for Cascading Style Sheets. While html is the standard language for creating web pages, and it is used to 
+    <div className="html">
+      <div className="html-container1">
+        <h2>HTML</h2>
+
+
+        <Collapse className='htmlHeader'>
+          <h2>
+            CSS is short for Cascading Style Sheets. While html is the standard language for creating web pages, and it is used to
             describe the structure of the web page -- CSS was created to remove the styling format from the html page.  CSS function is
-             to create the styles used in the web site and to make it look good. 
-            CSS is responsible for font color, font size, background color, and the layout of the web page.
-            CSS uses rules to style the web page.  A CSS rule-set consists of a selector and a declaration block. The selector points to the HTML element you want to style.
-            An example of this would look like;  .body ( background-color: lightgreen;)  or .p color: green; font-size: 20px;.
+            to create the styles used in the web site and to make it look good. </h2>
+          <Panel header="How do I write CSS" key="1">
+            <p className='cssBox'>
+              {/* <pre className='cssText'>
             
-             This way all the "p" tags in your web site will have a green 
-            font color and a font size of 20px. One of the big advantages of this is: if you want to change something throughout your site, you only have to change it in one place.
+            .body  {
+                "background-color: green;"
+                height: 10px;
+            }
             
+            h1 {
+                color purple;
+            }
+
+            p {
+                border 2px solid red;
+                margin: 50px;
+            }
+        </pre> */}
             
-            
-            
             </p>
-        </div>
-        <div className="css-container2">
-          <div className="question">
-            <p>
-              {/* {`Question 1: ${}`} */}
+          </Panel>
+        </Collapse>
+
+        <Collapse>
+          <h2>
+
+            HTML code is written on one page, CSS code is written on another page.  The way they are joined so they work together is with a link tag.
+            The CSS or style sheet is referenced in the Head of the HTML page.
+
+          </h2>
+          <Panel header="What does the CSS style sheet link look like?" key="1">
+            <p className='cssBox'>
+              <pre className='cssText'>
+                <h2>CSS link to HTML</h2>
+                &lt;link rel="stylesheet" href="style.css"/link&gt;
+              </pre>
             </p>
-          </div>
-          <div className="answer">
-            <p>
-              Answer: Hyper Text Markup Language
+          </Panel>
+        </Collapse>
+
+        <Collapse>
+          <h2>
+
+            When using an external style sheet as shown above changes can pertain to an entire web site.  In some cases just a single HTML page needs to have special styling, thus
+            CSS and styling code is written directly in the HTML file, this is known as an Internal style sheet.
+
+          </h2>
+          <Panel header="Example of internal CSS styling" key="1">
+            <p className='CSSlBox'>
+              <pre className='Styling'>
+                <h2>Internal styling</h2>
+                &lt;h1 style="color:blue; text-align: center;"&gt;
+                &lt;This isThis is a paragraph. &lt;/p&gt;
+
+
+
+
+              </pre>
             </p>
-          </div>
-          <div className="question">
-            <p>
-            {/* {`Question 2: ${}`} */}
-            </p>
-          </div>
-          <div className="answer">
-            <p>
-              Answer: Hyper Text Markup Language
-            </p>
-          </div>
-          <div className="question">
-            <p>
-            {/* {`Question 3: ${}`} */}
-            </p>
-          </div>
-          <div className="answer">
-            <p>
-              Answer: Hyper Text Markup Language
-            </p>
-          </div>
-        </div>
+          </Panel>
+        </Collapse>
+
       </div>
-    )
+    </div>
+  )
 }
 
-export default Css
+export default CSS
+
+
+
+
+
+
+
