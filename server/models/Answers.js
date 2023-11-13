@@ -1,15 +1,25 @@
 const { Schema, model } = require('mongoose');
 
 const answerSchema = new Schema({
-    answers: [
-        {
+
+    isCorrect: {
+        type: Boolean,
+        required: true,
+    },
+            
+    answersText: {
+        type: String,
+        minLength: 1,
+        maxLength: 280,
+        trim: true
+    },
+
+    questionId: {
         type: Schema.Types.ObjectId,
-        ref: 'CorrectAnswer',
-        },
-    ],
+        ref: 'Question'
+    },
+});
 
-    });
+const Answer = model('Answers', answerSchema);
 
-const Question = model('Question', questionSchema);
-
-module.exports = Question;
+module.exports = Answer;

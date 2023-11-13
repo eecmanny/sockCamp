@@ -1,57 +1,74 @@
-import  { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import "./header.css"
+import { useTypeFx } from "../hooks/typerFx";
+
 
 function Header() {
-    // const location = useLocation();
-    // const navigate = useNavigate();
+    const location = useLocation();
+    const textHeader = useTypeFx("{SOCK CAMP}", 220);
+
     return (
-        // {location.pathname !== '/Home' && (
 
         <header className="header">
-        
-            <h1>SOCKCAMP</h1>
-            <h2>Pre-Bootcamp</h2>
+            <main className='headerBar'>
+                <section className='headerLogo'>
+                    <h1>{textHeader}</h1>
+                    {/* <h2>PRE-BOOTCAMP</h2> */}
+                </section>
+                {location.pathname !== '/' && (
 
-            <nav>
-                <ul>
-                    <li>
+                    <section className='logout'>
+                        <Link to="/">
+                            <button>
+
+
+                                <h3>
+                                    Logout
+                                </h3>
+                            </button>
+                        </Link>
+                    </section>
+                )}
+            </main>
+
+
+            {location.pathname !== '/' && (
+                <nav className='navbar'>
+                    <ul className='navButtons'>
+                        <Link to="/home">
+                            <li className="navSingleButton" >
+                                <h3>Home</h3>
+                            </li>
+                        </Link>
                         <Link to="/html">
-                            HTML
+                            <li className="navSingleButton">
+                                <h3>HTML</h3>
+                            </li>
                         </Link>
-                    </li>
-                    <li>
                         <Link to="/css">
-                            CSS
+                            <li className="navSingleButton">
+                                <h3>CSS</h3>
+                            </li>
                         </Link>
-                    </li>
-                    <li>
                         <Link to="/javascript">
-                            JavaScript
+                            <li className="navSingleButton">
+                                <h3>JavaScript</h3>
+                            </li>
                         </Link>
-                    </li>
-                    <li>
                         <Link to="/react">
-                            React
+                            <li className="navSingleButton">
+                                <h3>React</h3>
+                            </li>
                         </Link>
-                    </li>
-                    <li>
-                        <Link to="/combo">
-                            Combo
+                        <Link to="/quiz">
+                            <li className="navSingleButton">
+                                <h3>Quiz</h3>
+                            </li>
                         </Link>
-                    </li>
-                </ul>
-            </nav>
+                    </ul>
+                </nav>
+            )}
         </header>
-        )}
-//     );
-// }
-
+    );
+};
 export default Header;
-
-// {location.pathname !== '/' && (
-//     <button
-//       className="btn btn-dark mb-3"
-//       onClick={() => navigate(-1)}
-//     >
-//       &larr; Go Back
-//     </button>

@@ -1,0 +1,78 @@
+/* .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+.headerBar {
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* height: 60px; */
+    background-color: cadetblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);;
+    color: white;
+    width: 100%;
+    box-shadow: 0 0 7px black;
+}
+
+
+.navbar {
+ display: flex;
+ justify-content: space-around;
+}
+
+.navButtons {
+display: flex; 
+width: 100%; 
+justify-content: space-around;
+}
+
+/* .nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    
+} */
+
+.navSingleButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2%;
+    list-style: none;
+    padding: 0 20px;
+    height: 60px;
+    background-color: cadetblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    border-radius: 15%;
+    box-shadow: 0 0 7px green
+}
+
+.headerLogo {
+    height: 80px;
+    font-size: 20px;
+}
+
+.headerLogo h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.navSingleButton h3 {
+    color: white;
+}
+
+.navSingleButton h3:hover {
+    color: rgb(0, 247, 255);
+}

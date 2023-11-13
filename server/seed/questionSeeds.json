@@ -1,34 +1,91 @@
 [
     {
         "category": "HTML",
-        "question": "Does this HTML Question work?",
-        "incorrectAnswer1": "NO",
-        "incorrectAnswer2": "false",
-        "incorrectAnswer3": "not right",
-        "correctAnswer": "Yes"
+        "questionId": 1,
+        "question": "HTML contains?"
+    
     },
     {
-        "category": "Css",
-        "question": "Does this CSS Question work?",
-        "incorrectAnswer1": "NO",
-        "incorrectAnswer2": "false",
-        "incorrectAnswer3": "not right",
-        "correctAnswer": "Yes"
+        "category": "HTML",
+        "questionId": 2,
+        "question": "HTML contains?"   
+    },
+    {
+        "category": "HTML",
+        "questionId": 3,
+        "question": "In HTML all?"   
+    },
+
+    
+    {
+        "category": "HTML",
+        "questionId": 4,
+        "question": "HTML?"    
+    },
+    {
+        "category": "HTML",
+        "questionId": 5,
+        "question": "HTML elements?"
+
+    
+    },
+    {
+        "category": "HTML",
+        "questionId": 6,
+        "question": "HTML always have?"   
+    },
+
+
+    {
+        "category": "CSS",
+        "questionId": 7,
+        "question": "Cascading Style Sheets?"
+    },
+    {
+        "category": "CSS",
+        "questionId": 8,
+        "question": "CSS is?"
+    },
+    {
+        "category": "CSS",
+        "questionId": 9,
+        "question": "An example of CSS is?"
+    },
+
+
+    {
+        "category": "JavaScript",
+        "questionId": 10,
+        "question": "JavaScript?"
     },
     {
         "category": "JavaScript",
-        "question": "Does this JavaScript Question work?",
-        "incorrectAnswer1": "NO",
-        "incorrectAnswer2": "false",
-        "incorrectAnswer3": "not right",
-        "correctAnswer": "Yes"
+        "questionId": 11,
+        "question": "JavaScript?"       
+    },
+    {
+        "category": "JavaScript",
+        "questionId": 12,
+        "question": "A method is?"
+
+    },
+
+
+    {
+        "category": "React",
+        "questionId": 13,
+        "question": "React is?"       
     },
     {
         "category": "React",
-        "question": "Does this React Question work?",
-        "incorrectAnswer1": "NO",
-        "incorrectAnswer2": "false",
-        "incorrectAnswer3": "not right",
-        "correctAnswer": "Does this React Question work?"
+        "questionId": 14,
+        "question": "React?"
+
+      
+    },
+    {
+        "category": "React",
+        "questionId": 15,
+        "question": "React?"
     }
 ]

@@ -1,0 +1,44 @@
+.Welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* .heroimage {
+    width: 100%;
+    height: 100%;
+    background-image: 'sockcampingcode.jpg';
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    width: 150%;
+    height: 150%;
+} */
+
+.Welcome button {
+    background-color: black;
+    color: white;
+}
+
+.Welcome button:hover {
+    color: cadetblue
+}
+
+.buttons {
+    display: flex;
+}
+
+.button1 {
+    margin: 10px;
+}
+
+.buttons h3 {
+    margin: 0 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+

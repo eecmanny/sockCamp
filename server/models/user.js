@@ -19,12 +19,12 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
-  // questions: [
-  //   {
-  //     type: Schema.Types.ObjectId,
-  //     ref: 'Question',
-  //   },
-  // ],
+  scores: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Score',
+    },
+  ],
 });
 
 // Set up pre-save middleware to create password
@@ -39,7 +39,10 @@ userSchema.pre('save', async function (next) {
 
 // Compare the incoming password with the hashed password
 userSchema.methods.isCorrectPassword = async function (password) {
+  console.log(password, this.password)
   await bcrypt.compare(password, this.password);
 };
 
 const User = model('User', userSchema);
+
+module.exports = User;

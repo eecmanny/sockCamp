@@ -1,0 +1,230 @@
+[
+    {
+        "isCorrect": true,
+        "answerText": "<p> tags",
+        "QuestionId": 1
+    },
+    {
+        "isCorrect": false,
+        "answerText": [
+            "<s> tags",
+            "<d> tags",
+            "<t> tags"     
+        ],
+        "QuestionId": 1
+    },
+
+
+    {
+        "isCorrect": true,
+        "answerText": "<p> tags",
+        "QuestionId": 2
+    },
+    {
+        "isCorrect": false,
+        "answerText": [         
+            "<s> tags",
+        "<d> tags",
+        "<t> tags"],
+        "QuestionId": 2
+    },
+
+    
+    {
+        "isCorrect": true,
+        "answerText": "elememts are represented by tags",
+        "QuestionId": 3
+    },
+    {
+        "isCorrect": false,
+        "answerText": [
+            " tags must always have an opening and closing tag",
+            "blocks must always have an opening and closing tag",
+           "elemets are written in UPPERCASE"
+        ],
+        "QuestionId": 3
+    },
+
+    
+    {
+        "isCorrect": true,
+        "answerText": "consists of elements used to structure a web pages",
+        "QuestionId": 4
+    },
+    {
+        "isCorrect": false,
+        "answerText": [
+            "uses rules to style a web page",
+            "is a programming language",
+         "can be used insead of JavaScript"
+        ],
+        "QuestionId": 4
+    },
+
+
+    
+    {
+        "isCorrect": true,
+        "answerText": "are represented by tags",
+        "QuestionId": 5
+    },
+    {
+        "isCorrect": false,
+        "answerText": [
+            "change the size of the font",
+            "are used to contain functions",
+           "are always written in UPPERCASE"
+        ],
+        "QuestionId": 5
+    },
+
+
+    {
+        "isCorrect": true,
+        "answerText": "a head and a body",
+        "QuestionId": 6
+    },
+    {
+        "isCorrect": false,
+        "answerText": [
+            "5 sections",
+            "4 sections",
+           "an <end> tag"
+        ],
+        "QuestionId": 6
+    },
+    {
+        "isCorrect": true,
+        "answerText": "are used to remove styling format from html",
+        "QuestionId": 7
+    },
+    {
+        "isCorrect": false,
+        "answerText": [
+            "are used to write programming code",
+            "contain a head and a body",
+            "start with !DOCTYPE"
+        ],
+        "QuestionId": 7
+    },
+    {
+        "isCorrect": true,
+        "answerText": "works with HTML to provide styling",
+        "QuestionId": 8
+    },
+    {
+        "isCorrect": false,
+        "answerText": [
+            "is another form of HTML",
+            "is the same as HTML",
+            "is part of the HTML page"
+        ],
+        "QuestionId": 8
+    },
+    {
+        "isCorrect": true,
+        "answerText": "background-color: red;",
+        "QuestionId": 9
+    },
+    {
+        "isCorrect": false,
+        "answerText": [
+            "<p></p>",
+            "<img src=''>",
+            "if/else statement"
+        ],
+        "QuestionId": 9
+    },
+    {
+        "isCorrect": true,
+        "answerText": "allows a user to make web pages more interactive",
+        "QuestionId": 10
+    },
+    {
+        "isCorrect": false,
+        "answerText": [
+            "is used to style a web page",
+            "is the same as Java",
+            "is also known as MERN"
+        ],
+        "QuestionId": 10
+    },
+    {
+        "isCorrect": true,
+        "answerText": "includes switch statements, loops and functions",
+        "QuestionId": 11
+    },
+    {
+        "isCorrect": false,
+        "answerText": [
+            "is used to change the style of a web page",
+            "can only be used with REACT",
+            "is a markup language"
+        ],
+        "QuestionId": 11
+    },
+    {
+        "isCorrect": true,
+        "answerText": "an action that can be performed on an object",
+        "QuestionId": 12
+    },
+    {
+        "isCorrect": false,
+        "answerText": [
+            "not part of JavaScript",
+            "is part of REACT",
+            "is part of a switch statement"
+        ],
+        "QuestionId": 12
+    },
+
+    
+    {
+        "isCorrect": true,
+        "answerText":  "both front end and back end framework?",
+        "QuestionId": 13
+    },
+    {
+        "isCorrect": false,
+        "answerText": [
+            "only a front end framework",
+            "only a back end framework",
+            "neither front end of back end framework"
+        ],
+        "QuestionId": 13
+    },
+
+    
+    {
+        "isCorrect": true,
+        "answerText": "makes reusable bits of code",
+        "QuestionId": 14
+    },
+    {
+        "isCorrect": false,
+        "answerText": [
+            "uses methods as an action",
+            "includes loops and functions",
+            "only works in the cloud"
+        ],
+        "QuestionId": 14
+    },
+
+
+    
+    {
+        "isCorrect": true,
+        "answerText": "is a JavaScript library or building user interfaces",
+        "QuestionId": 15
+    },
+    {
+        "isCorrect": false,
+        "answerText": [
+            "includes switch statements, loops and functions",
+            "is used to point to the HTML element you want to style",
+            "Must always be part of the body"
+        ],
+        "QuestionId": 15
+    }
+
+]

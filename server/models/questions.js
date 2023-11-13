@@ -6,9 +6,17 @@ const questionSchema = new Schema({
         required: true,
         trim: true,
     },
+    // questionId: {
+    //     type: Schema.Types.ObjectId,
+    //     ref: 'Question'
+    // },
+    questionId: {
+        type: Number,
+        required: true,
+    },
     question: {
         type: String,
-        required: 'You need to provide a question!',
+        required: true,
         minLength: 1,
         maxLength: 280,
         trim: true,
