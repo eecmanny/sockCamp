@@ -7,7 +7,7 @@ const { Panel } = Collapse;
 
 
 
-const Html = () => {
+const Javascript = () => {
   return (
     <div className="js">
       <div className="js-container1">
