@@ -1,4 +1,6 @@
-.footer {
+footer {}
+
+.footerBar {
     text-align: center;
     background-color: cadetblue;
     color: white;

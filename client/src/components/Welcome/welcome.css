@@ -30,6 +30,7 @@
 
 .buttons {
     display: flex;
+    margin-top: 50px;
 }
 
 .button1 {
@@ -42,3 +43,16 @@
     font-size: 20px;
 }
 
+.Welcome h2 {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.Welcome p {
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
