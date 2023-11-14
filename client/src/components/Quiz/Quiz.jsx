@@ -83,6 +83,10 @@ const Quiz = () => {
         </div>
 
       </p>
+      <div className='submitbtn'>
+
+      <button className="button1">Submit</button>
+      </div>
 </section>
 
     </main>
