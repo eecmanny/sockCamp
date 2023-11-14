@@ -1,5 +1,5 @@
 import React from 'react'
-import './Html.css'
+import './html.css'
 import { Collapse } from 'antd';
 const { Panel } = Collapse;
 
