@@ -32,7 +32,7 @@ function Header() {
             </main>
 
 
-            {location.pathname !== '/' && (
+            {location.pathname !== '/' && location.pathname !== '/signup' && location.pathname !== '/login' && (
                 <nav className='navbar'>
                     <ul className='navButtons'>
                         <Link to="/home">

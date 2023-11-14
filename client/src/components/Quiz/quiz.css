@@ -61,3 +61,12 @@
     box-shadow: 0 0 3px green
 
 }
+
+.answerPick:hover {
+    box-shadow: 0 0 3px blue;
+    cursor: pointer;
+    background-color: lightblue;
+    color: black;
+}
+
+
