@@ -23,23 +23,15 @@ const typeDefs = `
     type Question {
         _id: ID
         category: String
-        questionId: Int
         question: String
-        answers: [Answer]
-    }
-
-    type Answer {
-        _id: ID
-        isCorrect: Boolean
-        answersText: String
-        QuestionId: Int
+        choices: [String]
+        correctAnswer: String
     }
 
     type Query {
         users: [User]
         user(username: String!): User
         questions: [Question]
-        question(questionId: Int): Question
     }
 
     type Mutation {
