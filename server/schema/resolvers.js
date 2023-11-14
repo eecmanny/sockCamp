@@ -1,4 +1,4 @@
-const { Question, User, Answer, Score } = require('../models');
+const { Question, User, Score } = require('../models');
 // const { populate } = require('../models/Answers');
 const { signToken, AuthenticationError } = require('../utils/auth');
 
@@ -18,9 +18,9 @@ const resolvers = {
         //     return Question.findOne({ _id: questionId });
         // },
 
-        question: async (parent, { questionId }) => {
-            return Question.findOne({ questionId }).populate('answers');
-        },
+        // question: async (parent, { questionId }) => {
+        //     return Question.findOne({ questionId }).populate('answers');
+        // },
 
     },
 

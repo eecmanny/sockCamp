@@ -6,10 +6,6 @@ const questionSchema = new Schema({
         required: true,
         trim: true,
     },
-    // questionId: {
-    //     type: Number,
-    //     required: true,
-    // },
     question: {
         type: String,
         required: true,
@@ -17,12 +13,6 @@ const questionSchema = new Schema({
         maxLength: 280,
         trim: true,
     },
-    // answers: [
-    //     {
-    //     type: Schema.Types.ObjectId,
-    //     ref: 'Answer',
-    //     },
-    // ],
     choices: {
         type: Array,
         required: true,

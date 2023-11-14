@@ -7,9 +7,7 @@
     {
         "isCorrect": false,
         "answerText": [
-            "<s> tags",
-            "<d> tags",
-            "<t> tags"     
+                
         ],
         "questionId": 1
     },
@@ -32,15 +30,15 @@
     
     {
         "isCorrect": true,
-        "answerText": "elememts are represented by tags",
+        "answerText": "",
         "questionId": 3
     },
     {
         "isCorrect": false,
         "answerText": [
-            " tags must always have an opening and closing tag",
-            "blocks must always have an opening and closing tag",
-           "elemets are written in UPPERCASE"
+            " ",
+            "",
+           ""
         ],
         "questionId": 3
     },
@@ -48,15 +46,13 @@
     
     {
         "isCorrect": true,
-        "answerText": "consists of elements used to structure a web pages",
+        "answerText": "",
         "questionId": 4
     },
     {
         "isCorrect": false,
         "answerText": [
-            "uses rules to style a web page",
-            "is a programming language",
-         "can be used insead of JavaScript"
+            
         ],
         "questionId": 4
     },
@@ -71,9 +67,7 @@
     {
         "isCorrect": false,
         "answerText": [
-            "change the size of the font",
-            "are used to contain functions",
-           "are always written in UPPERCASE"
+            
         ],
         "questionId": 5
     },
@@ -101,9 +95,7 @@
     {
         "isCorrect": false,
         "answerText": [
-            "are used to write programming code",
-            "contain a head and a body",
-            "start with !DOCTYPE"
+           
         ],
         "questionId": 7
     },
@@ -115,9 +107,7 @@
     {
         "isCorrect": false,
         "answerText": [
-            "is another form of HTML",
-            "is the same as HTML",
-            "is part of the HTML page"
+           
         ],
         "questionId": 8
     },
