@@ -1,13 +1,35 @@
-footer {}
-
-.footerBar {
-    text-align: center;
+/* footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
     background-color: cadetblue;
     color: white;
+    text-align: center;
     padding: 10px;
-    position: absolute;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: -10px;
     box-shadow: 0 0 7px black;
+} */
+
+.footerBar {
+    display: flex;
+    /* height: 10%; */
+    justify-content: space-between;
+    /* background-color: cadetblue; */
+    color: black;
+    /* padding: 50px; */
+    position: absolute;
+    margin-top: 50px;
+    height: 8%;
+    width: 100%;
+    /* margin-bottom: -10px; */
+    /* box-shadow: 0 0 7px black; */
+    flex-direction: column;
 }
+
+.footerBar h2 {
+    text-align: center; 
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+}
+

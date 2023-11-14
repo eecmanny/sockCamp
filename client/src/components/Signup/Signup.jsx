@@ -11,7 +11,7 @@ function Signup() {
             </div>
             <form className="signupCard">
                 <div className="container">
-                    <h1>Sign Up</h1>
+                    <h1>Sign up</h1>
                     <p>Please create an account to begin.</p>
                     <hr />
                     <card className="signupBoxes">
@@ -50,12 +50,12 @@ function Signup() {
                         <div className="clearfix">
                             <Link to="/">
                                 <button type="button" className="cancelbtn">
-                                    Cancel
+                                    <h3>Cancel</h3>
                                 </button>
                             </Link>
                             <Link to="/home">
                                 <button type="submit" className="signupbtn">
-                                    Sign Up
+                                    <h3>Sign Up</h3>
                                 </button>
                             </Link>
                         </div>

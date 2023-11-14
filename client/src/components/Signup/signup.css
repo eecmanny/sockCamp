@@ -1,6 +1,6 @@
 .signupCard {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
     margin: 50px;
     padding: 20px;
@@ -11,7 +11,7 @@
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: #333;
+    color: white;
     justify-content: center;
 }
 
@@ -28,6 +28,41 @@
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: #333;
+    color: black;
     flex-direction: column;
+}
+
+.signupCard label {
+    display: block;
+    margin: 10px 0 10px;
+    /* color: white; */
+    text-align: left;
+}
+
+.signupCard input {
+    /* width: 100%; */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.clearfix button {
+    background-color: black;
+    font-family: 'roboto', sans-serif;
+    color: white;
+    border-radius: 50px;
+    width: 80px;
+    margin: 10px;
+}
+
+.clearfix button:hover {
+    color: lightsalmon;
+}
+
+.clearfix h3 {
+    /* margin: 0 10px; */
+    /* padding: 15px; */
+    font-size: 12px;
 }

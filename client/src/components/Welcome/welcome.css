@@ -21,11 +21,14 @@
 
 .Welcome button {
     background-color: black;
+    font-family: 'roboto', sans-serif;
     color: white;
+    border-radius: 50px;
+    width: 150px;
 }
 
 .Welcome button:hover {
-    color: cadetblue
+    color: lightsalmon ;
 }
 
 .buttons {
@@ -39,8 +42,8 @@
 
 .buttons h3 {
     margin: 0 10px;
-    padding: 20px;
-    font-size: 20px;
+    padding: 15px;
+    font-size: 15px;
 }
 
 .Welcome h2 {
@@ -48,11 +51,15 @@
     font-size: 50px;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .Welcome p {
     color: white;
-    font-size: 40px;
-    margin: 0;
-    padding: 0;
+    font-size: 20px;
+    /* margin: 0; */
+    /* padding: 0; */
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
+

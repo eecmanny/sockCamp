@@ -15,17 +15,20 @@
     align-items: center;
     padding: 0 20px;
     /* height: 60px; */
-    background-color: cadetblue;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);;
-    color: white;
+    /* background-color: cadetblue; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);; */
+    color: black;
     width: 100%;
-    box-shadow: 0 0 7px black;
+    /* box-shadow: 0 0 7px black; */
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 50px;
 }
 
 
 .navbar {
  display: flex;
  justify-content: space-around;
+ 
 }
 
 .navButtons {
@@ -46,16 +49,33 @@ justify-content: space-around;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 2%;
+    /* margin: 2%; */
     list-style: none;
     padding: 0 20px;
-    height: 60px;
-    background-color: cadetblue;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 40px;
+    background-color: black;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     align-items: center;
-    border-radius: 15%;
-    box-shadow: 0 0 7px green
+    border-radius: 7px;
+    /* box-shadow: 0 0 7px green */
 }
+
+.navSingleButton:hover {
+    /* margin: 2%; */
+    list-style: none;
+    padding: 0 20px;
+    height: 40px;
+    background-color: white;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    align-items: center;
+    border-radius: 7px;
+    border-color: black;
+    border-width: 50px;
+    /* text-decoration: none; */
+    /* box-shadow: 0 0 7px green */
+}
+
+
 
 .headerLogo {
     height: 80px;
@@ -71,8 +91,46 @@ justify-content: space-around;
 
 .navSingleButton h3 {
     color: white;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    text-decoration: none;
 }
 
 .navSingleButton h3:hover {
-    color: rgb(0, 247, 255);
+    color: black;
+    text-decoration: none;
+}
+
+.navbar h3 {
+    font-family: 'roboto', sans-serif;
+    /* font-weight: 500; */
+    font-size: 18px;
+}
+
+.logout button {
+    background-color: white;
+    /* border: none; */
+    width: 100px;
+    height: 55px;
+    border-radius: 7px;
+}
+
+.logout button:hover {
+    background-color: white;
+    border-color: purple;
+    /* border: none; */
+    width: 100px;
+    height: 55px;
+    border-radius: 10px;
+    border-width: 3px;
+    color: purple;
+    font-weight: 900;
+}
+
+.navButtons a {
+    text-decoration: none
+}
+
+.navButtons a:hover {
+    text-decoration: none;
 }
