@@ -7,13 +7,9 @@ const questionSchema = new Schema({
         trim: true,
     },
     // questionId: {
-    //     type: Schema.Types.ObjectId,
-    //     ref: 'Question'
+    //     type: Number,
+    //     required: true,
     // },
-    questionId: {
-        type: Number,
-        required: true,
-    },
     question: {
         type: String,
         required: true,
@@ -21,12 +17,23 @@ const questionSchema = new Schema({
         maxLength: 280,
         trim: true,
     },
-    answers: [
-        {
-        type: Schema.Types.ObjectId,
-        ref: 'Answer',
-        },
-    ],
+    // answers: [
+    //     {
+    //     type: Schema.Types.ObjectId,
+    //     ref: 'Answer',
+    //     },
+    // ],
+    choices: {
+        type: Array,
+        required: true,
+    },
+    correctAnswer: {
+        type: String,
+        required: true,
+        minLength: 1,
+        maxLength: 280,
+        trim: true,
+    },
     });
 
 const Question = model('Question', questionSchema);
