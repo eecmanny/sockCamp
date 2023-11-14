@@ -12,27 +12,21 @@ const CSS = () => {
 
         <Collapse className='htmlHeader'>
           <h2>
-            CSS is short for Cascading Style Sheets. While html is the standard language for creating web pages, and it is used to
-            describe the structure of the web page -- CSS was created to remove the styling format from the html page.  CSS function is
-            to create the styles used in the web site and to make it look good. </h2>
+           While HTML is the standard language for creating web pages, CSS, short for Cascading Style Sheets, works to style them.
+          By putting all the styling on one page, it creates a clean efficient way to use and update the styling for a web site.
+           </h2>
           <Panel header="How do I write CSS" key="1">
             <p className='cssBox'>
-              {/* <pre className='cssText'>
+              <pre className='cssText'>
             
-            .body  {
+            .body  &brace;
                 "background-color: green;"
                 height: 10px;
-            }
             
-            h1 {
-                color purple;
-            }
-
-            p {
-                border 2px solid red;
-                margin: 50px;
-            }
-        </pre> */}
+            &brace;
+            
+          
+        </pre> 
             
             </p>
           </Panel>
@@ -58,14 +52,15 @@ const CSS = () => {
         <Collapse>
           <h2>
 
-            When using an external style sheet as shown above changes can pertain to an entire web site.  In some cases just a single HTML page needs to have special styling, thus
-            CSS and styling code is written directly in the HTML file, this is known as an Internal style sheet.
+            CSS styling can be external or internal. The external will show changes that pertain to an entire web site. 
+             In some cases just a single HTML page needs to have special styling,when CSS and styling code is written directly in the HTML file,
+             it is Internal style sheet.
 
           </h2>
           <Panel header="Example of internal CSS styling" key="1">
             <p className='CSSlBox'>
               <pre className='Styling'>
-                <h2>Internal styling</h2>
+            
                 &lt;h1 style="color:blue; text-align: center;"&gt;
                 &lt;This isThis is a paragraph. &lt;/p&gt;
 
