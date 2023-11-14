@@ -17,10 +17,11 @@ function Welcome() {
                 </h2>
 
                 <p>
-                    We are a pre-bootcamp for those who want to learn how to code.  We will teach you the basics of HTML, CSS, and JavaScript.
+                    We are a pre-bootcamp for those who want to learn how to code. 
+                    <br/>Teaching you the basics of HTML, CSS, and JavaScript is our speciality.
                 </p>
                 <p>
-                    Please login or signup to get started.
+                    Please log in or sign up to get started.
                 </p>
                 <div className="buttons">
                     <div>

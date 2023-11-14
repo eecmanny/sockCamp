@@ -12,15 +12,15 @@ function Login() {
 
             <form>
                 <div className="Login">
-                    <h1>Login</h1>
-                    <p>Happy Coding!</p>
-                    <hr />
 
                     {/* <label htmlFor="email">
                     <b>Email</b>
-                </label>
+                    </label>
                 <input type="text" placeholder="Enter Email" name="email" required /> */}
                     <section className="loginCard">
+                    <h1>Login</h1>
+                    <p>Please log in to begin.</p>
+                    <hr/>
                         <card className="loginBoxes">
                             <label htmlFor="username">
                                 <b>Username</b>

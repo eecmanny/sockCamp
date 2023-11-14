@@ -1,18 +1,30 @@
 .loginCard {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
     margin: 50px;
     padding: 20px;
-    /* border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 0 10px #ccc; */
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: #333;
     justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: white;
+}
+.loginCard h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    /* color: white; */
+
+}
+
+
+.loginCard hr {
+    width: 500px;
+    align-items: center;
+    color: white;
 }
 
 .loginBoxes {
@@ -30,4 +42,44 @@
     font-size: 16px;
     color: #333;
     flex-direction: column;
+}
+
+.loginBoxes h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    /* color: white; */
+}
+
+.loginBoxes label {
+    display: block;
+    margin: 10px 0 10px;
+    /* color: white; */
+    text-align: left;
+}
+
+.loginBoxes input {
+    /* width: 100%; */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.loginBoxes button {
+    background-color: black;
+    font-family: 'roboto', sans-serif;
+    color: white;
+    border-radius: 50px;
+    width: 80px;
+}
+
+.loginBoxes button:hover {
+    color: lightsalmon;
+}
+
+.loginBoxes h3 {
+    /* margin: 0 10px; */
+    /* padding: 15px; */
+    font-size: 12px;
 }

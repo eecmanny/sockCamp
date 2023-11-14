@@ -1,0 +1,38 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    padding: 50px;
+
+}
+
+.home h2 {
+    font-size: 80px;
+    /* font-weight: 400; */
+    margin-bottom: 1rem;
+    text-align: left;
+    color: purple;
+    font-family: "roboto", sans-serif;
+}
+
+.home p {
+    font-size: 20px;
+    /* font-weight: 400; */
+    margin-bottom: 1rem;
+    text-align: left;
+    color: black;
+    font-family: "roboto", sans-serif;
+}
+
+.home img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 1rem;
+    border-radius: 500px;
+    border-color: lightsalmon;
+    border-style: solid;
+    border-width: 8px;
+    margin-left: 50px;
+}

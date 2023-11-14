@@ -5,13 +5,13 @@ import { useTypeFx } from "../hooks/typerFx";
 
 function Header() {
     const location = useLocation();
-    const textHeader = useTypeFx("{SOCK CAMP}", 220);
+    const textHeader = useTypeFx("{SOCK CAMP}", 270);
 
     return (
 
         <header className="header">
             {
-                location.pathname !== '/' && (
+                location.pathname !== '/' && location.pathname !== '/login' && location.pathname !== '/signup' && (
                     <main className='headerBar'>
                         <section className='headerLogo'>
                             <h1>{textHeader}</h1>
