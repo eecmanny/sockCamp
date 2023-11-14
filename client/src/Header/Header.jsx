@@ -10,26 +10,27 @@ function Header() {
     return (
 
         <header className="header">
-            <main className='headerBar'>
-                <section className='headerLogo'>
-                    <h1>{textHeader}</h1>
-                    {/* <h2>PRE-BOOTCAMP</h2> */}
-                </section>
-                {location.pathname !== '/' && (
+            {
+                location.pathname !== '/' && (
+                    <main className='headerBar'>
+                        <section className='headerLogo'>
+                            <h1>{textHeader}</h1>
+                            {/* <h2>PRE-BOOTCAMP</h2> */}
+                        </section>
 
-                    <section className='logout'>
-                        <Link to="/">
-                            <button>
+                        <section className='logout'>
+                            <Link to="/">
+                                <button>
 
 
-                                <h3>
-                                    Logout
-                                </h3>
-                            </button>
-                        </Link>
-                    </section>
+                                    <h3>
+                                        Logout
+                                    </h3>
+                                </button>
+                            </Link>
+                        </section>
+                    </main>
                 )}
-            </main>
 
 
             {location.pathname !== '/' && location.pathname !== '/signup' && location.pathname !== '/login' && (

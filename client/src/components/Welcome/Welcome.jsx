@@ -8,7 +8,7 @@ function Welcome() {
         <div className="WelcomePageBackground">
             <div>
                 <PageBackground />
-                {/* <img src="./public/sockcampcoding.jpg" alt="laptop background image"></img> */}
+                {/* <img src="./public/sockcampwelcome.jpg" alt="laptop background image"></img> */}
             </div>
             <div className="Welcome">
                 <h2>

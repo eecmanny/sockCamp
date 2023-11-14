@@ -4,9 +4,13 @@ import "./footer.css"
 function Footer() {
     return (
         <footer className="footer">
-            <div>
-                <h2>Sock Camp 2023 / Final Bootcamp Project</h2>
-            </div>
+            {location.pathname !== '/' && location.pathname !== '/signup' && location.pathname !== '/login' && (
+                <div className="footerBar">
+                    <div>
+                        <h2>Sock Camp 2023 / Final Bootcamp Project</h2>
+                    </div>
+                </div>
+            )}
         </footer>
     );
 }
