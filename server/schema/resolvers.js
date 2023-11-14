@@ -14,13 +14,14 @@ const resolvers = {
             return User.findOne({ username });
         },
 
-        // questions: async () => {
-        //     return Question.find().sort({ createdAt: -1 });
+        // question: async (parent, { questionId }) => {
+        //     return Question.findOne({ _id: questionId });
         // },
 
         question: async (parent, { questionId }) => {
-            return Question.findOne({ _id: questionId });
+            return Question.findOne({ questionId }).populate('answers');
         },
+
     },
 
     Mutation: {
@@ -47,11 +48,7 @@ const resolvers = {
 
             return { token, user };
         },
-        // // may end up not used
-        // addQuestion: async (parent, { questionText, questionTheme, answers }) => {
-        //     const question = await Question.create({ questionText, questionTheme, answers });
-        //     return question;
-        // },
+
 
 
         addScore: async (parent, { score, date }, context) => {
