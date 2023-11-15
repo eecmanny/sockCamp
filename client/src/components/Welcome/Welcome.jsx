@@ -1,14 +1,17 @@
 import { Link } from 'react-router-dom';
 import "./welcome.css"
-import PageBackground from '../../antDcustoms/background.jsx';
+import '../../antDcustoms/background.css';
+// import PageBackground from '../../antDcustoms/background.jsx';
+// import bRound from ".sockcampwelcome.jpg"
 
 // Comment
 function Welcome() {
     return (
         <div className="WelcomePageBackground">
             <div>
-                <PageBackground />
-                {/* <img src="./public/sockcampwelcome.jpg" alt="laptop background image"></img> */}
+                {/* <PageBackground /> */}
+                {/* <img src={bRound} alt={"backgroundPicture"}/>  */}
+                <img className="page-background" src="/sockcampwelcome.jpg" alt="laptop background image"></img>
             </div>
             <div className="Welcome">
                 <h2>

@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import './signup.css';
-import PageBackground from '../../antDcustoms/background.jsx';
+// import PageBackground from '../../antDcustoms/background.jsx';
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../../utils/mutations';
 import { useState } from 'react';
 import Auth from '../../utils/auth';
+import '../../antDcustoms/background.css';
 
 function Signup() {
     const [formState, setFormState] = useState({
@@ -41,8 +42,8 @@ function Signup() {
     return (
         <div className="SignupPageBackground">
             <div>
-                <PageBackground />
-                {/* <img src="./public/sockcampwelcome.jpg" alt="laptop background image"></img> */}
+                {/* <PageBackground /> */}
+                <img className="page-background" src="/sockcampwelcome.jpg" alt="laptop background image"></img>
             </div>
             <form className="signupCard">
                 <div className="container">

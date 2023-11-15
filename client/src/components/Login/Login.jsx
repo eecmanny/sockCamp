@@ -1,5 +1,6 @@
 import './login.css';
-import PageBackground from '../../antDcustoms/background.jsx';
+import '../../antDcustoms/background.css';
+// import PageBackground from '../../antDcustoms/background.jsx';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
@@ -45,8 +46,8 @@ function Login(props) {
     return (
         <main className="LoginPageBackground">
             <div>
-                <PageBackground />
-                {/* <img src="./public/sockcampwelcome.jpg" alt="laptop background image"></img> */}
+                {/* <PageBackground /> */}
+                <img className="page-background" src="/sockcampwelcome.jpg" alt="laptop background image"></img>
             </div>
 
 
