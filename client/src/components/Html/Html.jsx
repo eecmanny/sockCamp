@@ -3,10 +3,6 @@ import './html.css'
 import { Collapse } from 'antd';
 const { Panel } = Collapse;
 
-
-
-
-
 const Html = () => {
   return (
     <div className="html">
@@ -75,27 +71,7 @@ const Html = () => {
             </p>
           </Panel>
         </Collapse>
-        {/* <Collapse>
-          <h2>
-          HTML uses 
-          Inside the &lt;body&gr;&lt;/body&gt;
-            element are many tags. These tags are used to contain all the information that the user sees when they open a web page.
-            HTML elements are represented by tags. HTML tags label pieces of content such as "heading", "paragraph", "table", and so on.
-            A tag is written with an opening &lt;  &gt; and most tags also have a closing tag &lt;/  &gt;. Paragraphs are defined with an opening &lt;p&gt; tag, and a closing &lt;/p&gt; tag.
-            Notice that the ending tag has an extra forward slash in it. A link is defined with an opening &lt;a&gt; tag, followed by the link text, and the closing &lt;/a&gt; tag.
-
-          </h2>
-          <Panel header="How to write an Element" key="1">
-            <p className='htmlBox'>
-              <pre className='ElementText'>
-                <h2>Divider Element</h2>
-                &lt;div&gt;
-                <h2>Main Element</h2>
-                &lt;main&gt;
-              </pre>
-            </p>
-          </Panel>
-        </Collapse> */}
+        
       </div>
 
     </div>

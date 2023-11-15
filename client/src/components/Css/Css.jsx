@@ -5,29 +5,27 @@ const { Panel } = Collapse;
 
 const CSS = () => {
   return (
-    <div className="html">
-      <div className="html-container1">
-        <h2>HTML</h2>
+    <div className="css">
+      <div className="css-container1">
+        <h2>CSS</h2>
 
 
-        <Collapse className='htmlHeader'>
+        <Collapse className='cssHeader'>
           <h2>
-           While HTML is the standard language for creating web pages, CSS, short for Cascading Style Sheets, works to style them.
-          By putting all the styling on one page, it creates a clean efficient way to use and update the styling for a web site.
-           </h2>
+            While HTML is the standard language for creating web pages, CSS, short for Cascading Style Sheets, works to style them.
+            By putting all the styling on one page, it creates a clean efficient way to use and update the styling for a web site.
+          </h2>
           <Panel header="How do I write CSS" key="1">
             <p className='cssBox'>
-              <pre className='cssText'>
-            
-            .body  &brace;
+              <div className='cssText'>
+
+                .body &#123;
                 "background-color: green;"
                 height: 10px;
-            
-            &brace;
-            
-          
-        </pre> 
-            
+                &#125;
+
+              </div>
+
             </p>
           </Panel>
         </Collapse>
@@ -52,15 +50,15 @@ const CSS = () => {
         <Collapse>
           <h2>
 
-            CSS styling can be external or internal. The external will show changes that pertain to an entire web site. 
-             In some cases just a single HTML page needs to have special styling,when CSS and styling code is written directly in the HTML file,
-             it is Internal style sheet.
+            CSS styling can be external or internal. The external will show changes that pertain to an entire web site.
+            In some cases just a single HTML page needs to have special styling,when CSS and styling code is written directly in the HTML file,
+            it is Internal style sheet.
 
           </h2>
           <Panel header="Example of internal CSS styling" key="1">
-            <p className='CSSlBox'>
+            <p className='cssBox'>
               <pre className='Styling'>
-            
+
                 &lt;h1 style="color:blue; text-align: center;"&gt;
                 &lt;This isThis is a paragraph. &lt;/p&gt;
 
