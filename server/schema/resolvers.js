@@ -14,9 +14,6 @@ const resolvers = {
             return User.findOne({ username });
         },
 
-        // question: async (parent, { questionId }) => {
-        //     return Question.findOne({ _id: questionId });
-        // },
 
         // question: async (parent, { questionId }) => {
         //     return Question.findOne({ questionId }).populate('answers');
@@ -26,7 +23,9 @@ const resolvers = {
             const questions = await Question.find();
             console.log(questions);
             return questions;
-        }
+        },
+
+        
 
 
     },
@@ -56,20 +55,40 @@ const resolvers = {
             return { token, user };
         },
 
+        // addScore: async (parent, { score }, context) => {
+        //     if (context.user) {
+        //     const userScore = await Score.create({ score });
+        //     console.log(userScore);
+        //     console.log(context.user._id);
+        //     return userScore;
+        //     }
+        //     const createUserScore = await User.findByIdAndUpdate(
+        //         { _id: context.user._id },
+        //         { $push: { scores: userScore } },
+        //         { new: true }
+        //     );
+        //     return createUserScore;
+        // },
 
-
-        addScore: async (parent, { score, date }, context) => {
+        addScore: async (parent, { score }, context) => {
             if (context.user) {
-                const addUserScore = await User.findByIdAndUpdate(
+                // If a user is present, create a new Score document
+                const userScore = await Score.create({ score });
+                console.log(userScore);
+                // Update the user with the new score
+                const updatedUser = await User.findByIdAndUpdate(
                     { _id: context.user._id },
-                    { $push: { scores: score } },
+                    { $push: { scores: userScore } },
                     { new: true }
                 );
-                return addUserScore;
+                console.log(updatedUser);
+                return userScore; // You can choose to return userScore or updatedUser here
             }
-            const userScore = await Score.create({ score, date });
-            return userScore;
+        
+            // If there is no user, return an error or handle the case accordingly
+            return new Error("User not found in context");
         },
+        
 
         updateScore: async (parent, { score, date }, context) => {
             if (context.user) {
@@ -84,7 +103,6 @@ const resolvers = {
             return userScore;
         },
     },
-
 };
 
 module.exports = resolvers;
