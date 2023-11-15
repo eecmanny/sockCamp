@@ -99,12 +99,17 @@ justify-content: space-around;
 .navSingleButton h3:hover {
     color: black;
     text-decoration: none;
+    /* background-color: gray; */
+    font-size: 20px;
+    font-weight: 900;
+    color: cadetblue;
 }
 
 .navbar h3 {
     font-family: 'roboto', sans-serif;
     /* font-weight: 500; */
     font-size: 18px;
+    color: white;
 }
 
 .logout button {
@@ -129,8 +134,4 @@ justify-content: space-around;
 
 .navButtons a {
     text-decoration: none
-}
-
-.navButtons a:hover {
-    text-decoration: none;
 }
