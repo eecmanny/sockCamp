@@ -1,6 +1,6 @@
 import decode from 'jwt-decode';
 
-class Auth {
+class AuthService {
  loggedIn() {
         const token = this.getToken();
         // If there is a token and it's not expired, return `true`
@@ -27,4 +27,4 @@ class Auth {
   }
 }
 
-export default new Auth();
+export default new AuthService();
