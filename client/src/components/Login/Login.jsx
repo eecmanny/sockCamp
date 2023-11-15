@@ -1,8 +1,44 @@
 import { Link } from 'react-router-dom';
 import './login.css';
 import PageBackground from '../../antDcustoms/background.jsx';
+import Auth from '../../utils/auth';
 
-function Login() {
+const Login = (props) => {
+    const [formState, setFormState] = useState({ username: '', password: '' });
+    const [login, { error, data }] = useMutation(LOGIN_USER);
+  
+    // update state based on form input changes
+    const handleChange = (event) => {
+      const { name, value } = event.target;
+  
+      setFormState({
+        ...formState,
+        [name]: value,
+      });
+    };
+
+    const handleFormSubmit = async (event) => {
+        event.preventDefault();
+      
+        try {
+          const { data } = await login({
+            variables: { ...formState },
+          });
+      
+          Auth.login(data.login.token);
+        } catch (e) {
+          console.error(e);
+        }
+      
+        // clear form values
+        setFormState({
+          username: '',
+          password: '',
+        });
+      }
+
+
+
     return (
         <div className="LoginPageBackground">
             <div>
@@ -10,7 +46,7 @@ function Login() {
                 {/* <img src="./public/sockcampwelcome.jpg" alt="laptop background image"></img> */}
             </div>
 
-            <form>
+            <form onSubmit={handleFormSubmit}>
                 <div className="Login">
 
                     {/* <label htmlFor="email">
@@ -35,11 +71,9 @@ function Login() {
                             <label>
                                 <input type="checkbox" checked="checked" name="remember" style={{ marginBottom: '15px' }} /> Remember me
                             </label>                    <div>
-                                <Link to="/home">
-                                    <button className="button1">
+                                    <button type='submit' className="button1">
                                         <h3>LOGIN</h3>
                                     </button>
-                                </Link>
                                 <Link to="/signup">
                                     <button className="button1">
                                         <h3>SIGNUP</h3>

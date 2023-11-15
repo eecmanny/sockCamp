@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network-api');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/social-network-api');
 
 module.exports = mongoose.connection;
