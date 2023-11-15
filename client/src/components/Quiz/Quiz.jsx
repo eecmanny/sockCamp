@@ -14,9 +14,10 @@ const Quiz = () => {
 
   // query with graphQL, front end and back end and have a resolver 
   // useQuery hook
-
-  console.log(data)
-
+  console.log(questionsArray[0].question);
+  console.log(questionsArray[0].choices);
+  console.log(data);
+  // console.logO(answer);
   // useEffect(() => {
   //   const getQuestions = async (questionsArray) => {
   //     try {
@@ -39,12 +40,12 @@ const Quiz = () => {
   // };
 
   const renderQuestion = () => {
-    const currentQ = questions[currentQuestionsIndex];
+    const currentQ = questions[0];
     if (currentQ) {
       return (
         <div className="questionCard">
           <p>
-            {currentQ.questions}
+            {currentQ.question}
           </p>
         </div>
       );
@@ -71,111 +72,326 @@ const Quiz = () => {
 
       <section>
         <h2>Sock Camp - Quiz</h2>
+        <h3>
+
+        </h3>
       </section>
 
       <section className="quiz">
-        <p className='quizContainer'>
-          {questions.map((question, index) => {
-            <question className="questionCard">
-              <p>
-                {/* Question 1: What does HTML stand for? */}
-                {/* {`Question 1: ${currentQuestion}`} */}
-                {currentQuestion && (
-                  <div>
-                    <h2>Question:</h2>
-                    <p>{currentQuestion}</p>
-                  </div>
-                )}
-                {currentAnswer && (
+      <p className='quizContainer'>
+          {/* {data.questions.map((question, index) => { */}
+          <question className="questionCard">
+            <p>
+              {/* Question 1: What does HTML stand for? */}
+              {/* {`Question 1: ${currentQuestion}`} */}
+              {(
+                <div>
+                  <h2>Question:</h2>
+                  <h3>{questionsArray[0].question}</h3>
+                  <p>
+
+                  </p>
+                </div>
+              )}
+              {/* { (
                   <div>
                     <h2>Answer:</h2>
-                    <p>{currentAnswer}</p>
+                    <p></p>
                   </div>
-                )}
-              </p>
+                )} */}
+            </p>
 
-            </question>
-          })}
+          </question>
 
-          {answer.map((answer, index) => {
-            <div className='answerContainerCard'>
-              <answer className="answerPick">
-                <p>
-                  {/* Answer: Hyper Text Markup Language  */}
-                  {`Answer 1: ${answer}`}
-                </p>
-              </answer>
-              <answer className="answerPick">
-                <p>
-                  {/* Answer: Hyper Text Markup Language  */}
-                  {`Answer 2: ${answer}`}
-                </p>
-              </answer>
-              <answer className="answerPick">
-                <p>
-                  {/* Answer: Hyper Text Markup Language  */}
-                  {`Answer 3: ${answer}`}
-                </p>
-              </answer>
-              <answer className="answerPick">
-                <p>
-                  {/* Answer: Hyper Text Markup Language  */}
-                  {`Answer 4: ${answer}`}
-                </p>
-              </answer>
-
-            </div>
-          })};
-
-        </p>
-
-        <p className='quizContainer'>
-          {questions.map((question, index) => {
-            <question className="questionCard">
+          {/* {answer.map((answer, index) => { */}
+          <div className='answerContainerCard'>
+            <answer className="answerPick">
               <p>
-                {/* Question 1: What does HTML stand for? */}
-                {`Question 2: ${question}`}
-
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[0].choices[0]}`}
               </p>
+            </answer>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[0].choices[1]}`}
+              </p>
+            </answer>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[0].choices[2]}`}
+              </p>
+            </answer>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[0].choices[2]}`}
+              </p>
+            </answer>
 
-            </question>
-          })};
+          </div>
+          {/* })}; */}
 
-          {answer.map((answer, index) => {
-            <div className='answerContainerCard'>
-              <answer className="answerPick">
-                <p>
-                  {/* Answer: Hyper Text Markup Language */}
-                  {`Answer 1: ${answer}`}
-                </p>
-              </answer>
-              <answer className="answerPick">
-                <p>
-                  {/* Answer: Hyper Text Markup Language */}
-                  {`Answer 2: ${answer}`}
-                </p>
-              </answer>
-              <answer className="answerPick">
-                <p>
-                  {/* Answer: Hyper Text Markup Language  */}
-                  {`Answer 3: ${answer}`}
-                </p>
-              </answer>
-              <answer className="answerPick">
-                <p>
-                  {/* Answer: Hyper Text Markup Language  */}
-                  {`Answer 4: ${answer}`}
-                </p>
-              </answer>
-            </div>
-          })};
+          {/* }
+           )} */}
+
+
 
         </p>
+        <p className='quizContainer'>
+          {/* {data.questions.map((question, index) => { */}
+          <question className="questionCard">
+            <p>
+              {/* Question 1: What does HTML stand for? */}
+              {/* {`Question 1: ${currentQuestion}`} */}
+              {(
+                <div>
+                  <h2>Question:</h2>
+                  <h3>{questionsArray[2].question}</h3>
+                  <p>
+
+                  </p>
+                </div>
+              )}
+              {/* { (
+                  <div>
+                    <h2>Answer:</h2>
+                    <p></p>
+                  </div>
+                )} */}
+            </p>
+
+          </question>
+
+          {/* {answer.map((answer, index) => { */}
+          <div className='answerContainerCard'>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[2].choices[0]}`}
+              </p>
+            </answer>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[2].choices[1]}`}
+              </p>
+            </answer>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[2].choices[2]}`}
+              </p>
+            </answer>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[2].choices[2]}`}
+              </p>
+            </answer>
+
+          </div>
+          {/* })}; */}
+
+          {/* }
+           )} */}
+
+
+
+        </p>
+        <p className='quizContainer'>
+          {/* {data.questions.map((question, index) => { */}
+          <question className="questionCard">
+            <p>
+              {/* Question 1: What does HTML stand for? */}
+              {/* {`Question 1: ${currentQuestion}`} */}
+              {(
+                <div>
+                  <h2>Question:</h2>
+                  <h3>{questionsArray[7].question}</h3>
+                  <p>
+
+                  </p>
+                </div>
+              )}
+              {/* { (
+                  <div>
+                    <h2>Answer:</h2>
+                    <p></p>
+                  </div>
+                )} */}
+            </p>
+
+          </question>
+
+          {/* {answer.map((answer, index) => { */}
+          <div className='answerContainerCard'>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[7].choices[0]}`}
+              </p>
+            </answer>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[7].choices[1]}`}
+              </p>
+            </answer>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[7].choices[2]}`}
+              </p>
+            </answer>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[7].choices[2]}`}
+              </p>
+            </answer>
+
+          </div>
+          {/* })}; */}
+
+          {/* }
+           )} */}
+
+
+
+        </p>
+        <p className='quizContainer'>
+          {/* {data.questions.map((question, index) => { */}
+          <question className="questionCard">
+            <p>
+              {/* Question 1: What does HTML stand for? */}
+              {/* {`Question 1: ${currentQuestion}`} */}
+              {(
+                <div>
+                  <h2>Question:</h2>
+                  <h3>{questionsArray[14].question}</h3>
+                  <p>
+
+                  </p>
+                </div>
+              )}
+              {/* { (
+                  <div>
+                    <h2>Answer:</h2>
+                    <p></p>
+                  </div>
+                )} */}
+            </p>
+
+          </question>
+
+          {/* {answer.map((answer, index) => { */}
+          <div className='answerContainerCard'>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[14].choices[0]}`}
+              </p>
+            </answer>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[14].choices[1]}`}
+              </p>
+            </answer>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[14].choices[2]}`}
+              </p>
+            </answer>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[14].choices[2]}`}
+              </p>
+            </answer>
+
+          </div>
+          {/* })}; */}
+
+          {/* }
+           )} */}
+
+
+
+        </p>
+        <p className='quizContainer'>
+          {/* {data.questions.map((question, index) => { */}
+          <question className="questionCard">
+            <p>
+              {/* Question 1: What does HTML stand for? */}
+              {/* {`Question 1: ${currentQuestion}`} */}
+              {(
+                <div>
+                  <h2>Question:</h2>
+                  <h3>{questionsArray[11].question}</h3>
+                  <p>
+
+                  </p>
+                </div>
+              )}
+              {/* { (
+                  <div>
+                    <h2>Answer:</h2>
+                    <p></p>
+                  </div>
+                )} */}
+            </p>
+
+          </question>
+
+          {/* {answer.map((answer, index) => { */}
+          <div className='answerContainerCard'>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[11].choices[0]}`}
+              </p>
+            </answer>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[11].choices[1]}`}
+              </p>
+            </answer>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[11].choices[2]}`}
+              </p>
+            </answer>
+            <answer className="answerPick">
+              <p>
+                {/* Answer: Hyper Text Markup Language  */}
+                {`${questionsArray[11].choices[2]}`}
+              </p>
+            </answer>
+
+          </div>
+          {/* })}; */}
+
+          {/* }
+           )} */}
+
+
+
+        </p>
+
         <div className='submitbtn'>
 
           <button className="button1">Submit</button>
         </div>
+        
       </section>
+
+
 
     </main>
   )
