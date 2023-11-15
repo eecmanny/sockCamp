@@ -22,6 +22,13 @@ const resolvers = {
         //     return Question.findOne({ questionId }).populate('answers');
         // },
 
+        questions : async (parent, { question }) => {
+            const questions = await Question.find();
+            console.log(questions);
+            return questions;
+        }
+
+
     },
 
     Mutation: {
