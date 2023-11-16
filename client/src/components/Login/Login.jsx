@@ -4,9 +4,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../../utils/mutations';
-import decode from 'jwt-decode';
 
-import Auth from '../../utils/auth';
+// import Auth from '../../utils/auth';
 
 function Login() {
     const [formState, setFormState] = useState({ email: '', password: '' });
@@ -32,7 +31,6 @@ function Login() {
                 variables: { ...formState },
             });
 
-            Auth.login(data.login.token);
         } catch (e) {
             console.error(e);
         }
