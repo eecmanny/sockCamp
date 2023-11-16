@@ -57,7 +57,7 @@ Currently, two official plugins are available:
 ![jsonwebtoken Badge](https://img.shields.io/badge/jsonwebtoken-white)
 
 This application uses the following dependencies:
-nodemon, mongoose, jsonwebtoken, graphQL, express, bcrypt, apollo/server and node
+nodemon, mongoose, jsonwebtoken, graphQL, express, bcrypt, apollo/server, node and Ant Design
 
 
 ## Usage
