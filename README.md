@@ -4,7 +4,8 @@
 # Description
 ![sockCamp Badge](https://img.shields.io/badge/sockCamp-green)
 
-The idea behind sockCamp was to create an application that lets the user get a real look at what Bootcamp is all about.  We have started out by offering 4 different topics to explore. Each topic comes with a paragraph or two explaining what that subject is about and how to use it.  We have also included questions on each topic for the user to test what they have learned. By participating in sockCamp, the user gets the opportunity to experience what kind of information is taught.  Users spend time working to get a ture, behind the sceens look at Bootcamp. The more the user is prepared and ready, the more that person will learn and get out of the actual Bootcamp experience.
+The idea behind sockCamp was to create an application that lets the user get a real look at what Bootcamp is all about. Our goal is to create a bootcamp like experience.  We have started out by offering 4 different topics to explore. Each topic comes with a couple of paragraphs explaining the topic. After reading about the topic, you can click on the bottom text and get a drop-down box that give an example of that code.
+In addition, to test your knowledge and see what you have learned at the end we have included a quiz.  This quiz gives random questions from each of the four topics. By participating in sockCamp, the user gets the opportunity to experience what kind of information is taught.  Users spend time working to get a ture, behind the sceens look at Bootcamp. The more the user is prepared and ready, the more that person will learn and succeed in the actual Bootcamp.
 
 
 ## Table of Contents
@@ -12,7 +13,9 @@ The idea behind sockCamp was to create an application that lets the user get a r
 * [Table of Contents](#table-of-contents)
 * [User Story](#user-story)
 * [Acceptance Criteria](#acceptance-criteria)
-* [Files and Images](#files-and-images)
+* [Files](#files)
+* [Images](#images)
+* [Links](#links)
 * [Useage](#usage)
 * [Installation](#installation)
 * [Credits](#credits)
@@ -40,37 +43,49 @@ WHEN I have gone through the topics I will also have the choice of a 5th topic, 
 WHEN clicking on the "Combo" button
 THEN I will be taken to a page that offers a quiz combining random questions from all four of the previous topics.
 
-## React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Files
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Files and Images
-![vite Badge](https://img.shields.io/badge/vite-blue)
-![apolloe/client Badge](https://img.shields.io/badge/apollo/client-purple)
-![ESLint Badge](https://img.shields.io/badge/ESLint-orange)
 ![React Badge](https://img.shields.io/badge/React-yellow)
+![vite Badge](https://img.shields.io/badge/vite-blue)
+![Apollo/Client Badge](https://img.shields.io/badge/apollo/client-purple)
+![Apollo/Server Badge](https://img.shields.io/badge/apollo/server-pink)
+![ESLint Badge](https://img.shields.io/badge/ESLint-orange)
+![MongoDB](https://img.mongodb.io/badge/MongoDB-darkblue)
 ![jsonwebtoken Badge](https://img.shields.io/badge/jsonwebtoken-white)
 
 This application uses the following dependencies:
+React, GraphQL, MongoDB, Express, bcrypt, Apollo/Server, Apollo/Client
 nodemon, mongoose, jsonwebtoken, graphQL, express, bcrypt, apollo/server and node
+
+## Images
+
+![Image of Welcome Page](image.png)
+![Image of login](image-1.png)
+![Image of Home Page](image-2.png)
+![Image of a topic page with dropdown box](image-3.png)
+
+## Links
+ 
+ Link to github:  https://github.com/eecmanny/sockCamp
+
+ Link to Heroku:
 
 
 ## Usage
 
-To use this application one must login in or sign up.  This will give the user access to the pages and topics available.  
+To use this application one must login in or sign up on the Welcome page.  This will give the user access to the pages and topics available.  
+From the Welcome page you will be directed to the Home Page, which contains the basic information about the application and the choice of 
+which topic you want to go to.
 
 ## Installation
 
-A user must so an npm i  and then an npm run dev to start the application.
+A use must have Heroku installed to run the program.  The other way to run it is through npm i and npm run develop.
 
 ## Future deployment: 
 
-What we would like to see in the future is an expanded version of this application.  More topics, more detail, more and diverse questions.
+Our future goals and views for this application are: add additional information on each of the current topics.  Also, to add additional topics to choose from and learn.
+Another thing that we can expand upon is the quiz, adding additional questions, add more indepth questions, and modify some of the questions that are there.
 
 ## Credit: 
 
