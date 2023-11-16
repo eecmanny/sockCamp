@@ -4,6 +4,8 @@ import PageBackground from '../../antDcustoms/background';
 import { useMutation } from '@apollo/client';
 import { ADD_USER, LOGIN_USER } from '../../utils/mutations';
 import { useState } from 'react';
+import '../../antDcustoms/background.css';
+
 
 function Signup() {
     const [formState, setFormState] = useState({
@@ -55,8 +57,8 @@ function Signup() {
     return (
         <div className="SignupPageBackground">
             <div>
-                <PageBackground />
-                {/* <img src="./public/sockcampwelcome.jpg" alt="laptop background image"></img> */}
+                {/* <PageBackground /> */}
+                <img className="page-background" src="/sockcampwelcome.jpg" alt="laptop background image"></img>
             </div>
             <form className="signupCard" onSubmit={handleFormSubmit}>
                 <div className="container">
