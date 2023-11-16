@@ -18,7 +18,7 @@ function Header() {
                             {/* <h2>PRE-BOOTCAMP</h2> */}
                         </section>
 
-                        <section className='logout'>
+                        <section className='logout logoutButton'>
                             <Link to="/">
                                 <button>
 

@@ -30,7 +30,7 @@ const CSS = () => {
           </Panel>
         </Collapse>
 
-        <Collapse>
+        <Collapse className='cssHeader'>
           <h2>
 
             HTML code is written on one page, CSS code is written on another page.  The way they are joined so they work together is with a link tag.
@@ -47,7 +47,7 @@ const CSS = () => {
           </Panel>
         </Collapse>
 
-        <Collapse>
+        <Collapse className='cssHeader'>
           <h2>
 
             CSS styling can be external or internal. The external will show changes that pertain to an entire web site.

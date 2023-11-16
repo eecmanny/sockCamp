@@ -26,7 +26,7 @@ const Javascript = () => {
         </Panel>
       </Collapse>
 
-      <Collapse>
+      <Collapse  className='javascriptHeader'>
         <h2>
          JavaScript contains loops and function, methods and switch statements.
          A method is an action that can be performed on an object
@@ -45,7 +45,7 @@ const Javascript = () => {
         </Panel>
       </Collapse>
 
-      <Collapse>
+      <Collapse className='javascriptHeader'>
         <h2>
 
           In JavaScript a switch statement is used to perform different actions based on different conditions. 

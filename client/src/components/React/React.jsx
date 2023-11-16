@@ -1,7 +1,7 @@
 // import React, { Component } from 'react'
  import {Component} from 'react'
-import './react.css'
 import { Collapse } from 'antd';
+import './react.css'
 const { Panel } = Collapse;
 
 const React = () => {

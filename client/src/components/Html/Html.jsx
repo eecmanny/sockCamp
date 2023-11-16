@@ -52,14 +52,14 @@ const Html = () => {
 
        
 
-        <Collapse>
+        <Collapse  className='htmlHeader'>
           <h2>
           HTML is a markup language and not a coding language. IT uses elements to structure the web page.
           Two important and necessary elements are the <head></head> and <body></body> elements.  The <head></head> element contains meta information about the document. Information
             placed in the &lt;head&gt; is not displayed on the web page. The &lt;body&gr;&lt;/body&gt; element contains the actual content of the document. 
 
           </h2>
-          <Panel header="Take a look at a head and body tag" key="1">
+          <Panel className='Panel' header="Take a look at a head and body tag" key="1">
             <p className='htmlBox'>
               <pre className='Tags'>
                 <h2>Tags</h2>
