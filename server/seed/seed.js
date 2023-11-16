@@ -6,7 +6,7 @@ const questionSeeds = require('./questionSeeds.json');
 
 db.once('open', async () => {
   
-    // await User.create(userSeeds);
+    await User.create(userSeeds);
 
     await Question.create(questionSeeds);
   
