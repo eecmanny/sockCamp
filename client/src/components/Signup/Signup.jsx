@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import './signup.css';
-// import PageBackground from '../../antDcustoms/background.jsx';
+import PageBackground from '../../antDcustoms/background';
 import { useMutation } from '@apollo/client';
-import { ADD_USER } from '../../utils/mutations';
+import { ADD_USER, LOGIN_USER } from '../../utils/mutations';
 import { useState } from 'react';
-import Auth from '../../utils/auth';
 import '../../antDcustoms/background.css';
+
 
 function Signup() {
     const [formState, setFormState] = useState({
@@ -14,6 +14,7 @@ function Signup() {
         password: '',
     });
     const [addUser, { error, data }] = useMutation(ADD_USER);
+    const [login] = useMutation(LOGIN_USER);
 
     const handleChange = (event) => {
         const { name, value } = event.target;
@@ -30,12 +31,26 @@ function Signup() {
 
         try {
             const { data } = await addUser({
-                variables: { ...formState },
-            });
+                variables: { 
+                    username: formState.username,
+                    email: formState.email,
+                    password: formState.password,
+            }});
+            
 
-            Auth.login(data.addUser.token);
-        } catch (e) {
-            console.error(e);
+            if (data) {
+                await login({
+                    variables: { 
+                        email: formState.email,
+                        password: formState.password, },
+                });
+
+                localStorage.setItem('id_token', data.login.token);
+            } else {
+                console.log('Signup failed');
+            }
+        } catch (error) {
+            console.log(error);
         }
     };
 
@@ -45,7 +60,7 @@ function Signup() {
                 {/* <PageBackground /> */}
                 <img className="page-background" src="/sockcampwelcome.jpg" alt="laptop background image"></img>
             </div>
-            <form className="signupCard">
+            <form className="signupCard" onSubmit={handleFormSubmit}>
                 <div className="container">
                     <h1>Sign up</h1>
                     <p>Please create an account to begin.</p>
@@ -53,11 +68,11 @@ function Signup() {
                     {data ? (
                         <p>
                             Success! You may now head{' '}
-                            <Link to="/">back to the homepage.</Link>
+                            <Link to="/home">back to the homepage.</Link>
                         </p>
                     ) : (
 
-                        <form className="signupBoxes" onSubmit={handleFormSubmit}>
+                        <div className="signupBoxes">
                             <label htmlFor="email">
                                 <b>Email</b>
                             </label>
@@ -81,7 +96,7 @@ function Signup() {
                                 placeholder="Your username"
                                 name="username"
                                 type="text"
-                                value={formState.name}
+                                value={formState.username}
                                 onChange={handleChange}
                             />
                             <label htmlFor="psw">
@@ -102,9 +117,9 @@ function Signup() {
                         </label>
                         <input type="password" placeholder="Repeat Password" name="psw-repeat" required /> */}
 
-                            <label>
+                            {/* <label>
                             <input type="checkbox" checked="checked" name="remember" style={{ marginBottom: '15px' }} /> Remember me
-                        </label>
+                        </label> */}
 
                             <p>
                                 By creating an account you agree to our <a href="#!" style={{ color: 'dodgerblue' }}>
@@ -120,13 +135,13 @@ function Signup() {
                                     <h3>Cancel</h3>
                                 </button>
                                 </Link>
-                                <Link to="/home">
+                              
                                 <button type="submit" className="signupbtn">
                                     <h3>Sign Up</h3>
                                 </button>
-                                </Link>
+                      
                             </div>
-                        </form>
+                        </div>
                     )}
 
                     {error && (
